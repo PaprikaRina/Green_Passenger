@@ -1,0 +1,31 @@
+.custom-textarea {
+    width: 360px;
+     
+}
+
+.custom-textarea__field {
+    min-height: 150px;
+    width: 100%;
+    border: 2px solid #B7B7B7;
+    border-radius: 8px;
+    padding: 15px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #475009;
+    font-family: inherit;
+    resize: none;
+}
+
+.custom-textarea__field::placeholder {
+    color: #A3A3A3;
+}
+
+.custom-textarea__field:hover {
+    border-color: rgba(71, 80, 9, 0.7);
+}
+
+.custom-textarea__field:focus-visible {
+    outline: none;
+    border-color :#502198;
+}

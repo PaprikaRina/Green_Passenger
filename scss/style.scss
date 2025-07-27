@@ -1,0 +1,35 @@
+/*Global*/
+/*-----------------------------------*/
+
+@use "_variables" as *;
+@use "_mixins" as *;
+
+@use "global/_reboot";
+@use "global/_font";
+@use "global/_visually-hidden";
+@use "global/_container";
+
+/*Blocks*/
+/*-----------------------------------*/
+@use "blocks/_page-content";
+@use "blocks/_products";
+@use "blocks/_header";
+@use "blocks/_main-nav";
+@use "blocks/_hero";
+@use "blocks/_btn";
+@use "blocks/_about-company";
+@use "blocks/_aside-nav";
+@use "blocks/_social";
+@use "blocks/_footer";
+@use "blocks/_user-form";
+@use "blocks/_stocks";
+@use "blocks/_product-card";
+@use "blocks/_cookie";
+@use "blocks/_custom-radio";
+@use "blocks/_custom-input";
+@use "blocks/_custom-checkbox";
+@use "blocks/_custom-textarea";
+@use "blocks/_custom-search";
+@use "blocks/_order";
+@use "blocks/_order-card";
+@use "blocks/_order-form";

@@ -1,0 +1,126 @@
+.custom-input {
+    width: 360px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.custom-input__field {
+    border: 2px solid #B7B7B7;
+    border-radius: 8px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #475009;
+    padding: 16px;
+    font-family: inherit;
+}
+
+.custom-input__field:hover {
+    border-color: rgba(71, 80, 9, 0.7);
+}
+
+.custom-input__field:hover ~ .custom-input__icon {
+    color: rgba(71, 80, 9, 0.7);
+}
+
+
+.custom-input__field:focus-visible {
+   border-color: #475009;
+   outline: none;
+}
+
+.custom-input__field:focus-visible ~ .custom-input__icon {
+    color: #475009;
+}
+
+.custom-input__field:focus-visible + .custom-input__label {
+    color: rgba(71, 80, 9, 0.7);
+}
+
+.custom-input--user-contacts .custom-input__field {
+    padding-left: 54px;
+}
+
+.custom-input__field::placeholder {
+    color: #A3A3A3;
+}
+
+.custom-input__field[disabled] {
+    border: 2px solid rgba(173, 173, 173, 0.4);
+    background-color: #ffffff;
+}
+
+.custom-input__field[disabled]::placeholder{
+    color: rgba(173, 173, 173, 0.4);
+}
+
+.custom-input__label {
+    position: absolute;
+    top: 0;
+    left: 15px;
+    transform: translateY(-50%);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 14px;
+    color:#475009;
+    background-color: #ffffff;
+    padding: 1px 4px;
+    user-select: none;
+}
+
+.custom-input__field[disabled] + .custom-input__label {
+   color: rgba(173, 173, 173, 0.4);
+}
+
+.custom-input__icon {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    pointer-events: none;
+    color: #B7B7B7;
+}
+
+.custom-input__btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    right: 16px;
+    transform: translateY(-50%);
+    color: #475009;
+
+}
+
+.custom-input--error .custom-input__field{
+    border-color: #FF7373;
+}
+
+.custom-input__text-error {
+    display: none;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 10px;
+    color:#FF7373;
+    margin: 5px 0 0 0;
+    padding: 0;
+}
+
+.custom-input--error .custom-input__text-error {
+    display: block;
+}
+
+.custom-input--error .custom-input__icon {
+    color: #FF7373;
+    top: 40%;
+    transform: translateY(-40%);
+}
