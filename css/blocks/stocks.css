@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .stocks-card {
     display: flex;
     margin: 0;
@@ -109,4 +110,117 @@
     border: none;
     padding: 0;
     cursor: pointer;
+=======
+.stocks-card {
+    display: flex;
+    margin: 0;
+}
+
+.stocks-card__wrapper {
+    width: 502px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    margin: 100px auto;
+    background-color: #FFFAE8;
+    border-radius: 0 0 10px 10px;
+}
+
+.stocks-card__img {
+    width: 502px;
+    height: 500px;
+    border-radius: 10px 10px 0 0;
+}
+
+.stocks-card__wrapper-bottom {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 40px 20px;
+}
+
+.stocks-card__heading {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 100%;
+    text-align: center;
+    margin: 0 auto 25px;
+    text-transform: uppercase;
+}
+
+.stocks-card__description {
+    display: block;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 100%;
+    text-align: center;
+    margin: 0 0 45px;
+}
+
+.stocks-card__wrapper-btn {
+    display: flex;
+    gap: 40px;
+}
+
+.stocks-card__btn {
+    width: 210px;
+    padding: 18px;
+    border-radius: 10px;
+    background-color: #574524;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 100%;
+    color:#FFFFFF;
+    cursor: pointer;
+}
+
+.stocks-card__btn--secondary {
+    border: 1px solid #574524;
+    color: #574524;
+    background-color: #FFFAE8;
+}
+
+.stocks-card__label {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    display: block;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    margin: 0;
+    padding: 15px;
+    background-color: #574524;
+    color:#FFFFFF;
+    text-align: center;
+    text-transform: uppercase;
+    border-radius: 10px;
+}
+
+.stocks-card__wrapper-top {
+    position: relative;
+}
+
+.stocks-card__label--bottom {
+    top: auto;
+    left: auto;
+    bottom: 20px;
+    right: 20px;
+}
+
+.stocks-card__fullscreen-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+   
+    display: flex;
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+>>>>>>> origin/main
 }

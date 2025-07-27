@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .custom-search {
     min-width: 260px;
     position: relative;
@@ -33,4 +34,41 @@
     right: 10px;
     transform: translateY(-50%);
     color:#B7B7B7;
+=======
+.custom-search {
+    min-width: 260px;
+    position: relative;
+}
+
+.custom-search__field {
+    width: 100%;
+    font-family: inherit;
+    border: none;
+    border-bottom: 2px solid #B7B7B7;
+    padding: 13px 40px 13px 10px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 14px;
+}
+
+.custom-search__field::placeholder {
+    color: #B7B7B7;
+}
+
+.custom-search__field:hover {
+    border-color: rgba(71, 80, 9, 0.7);
+}
+
+.custom-search__field:focus-visible {
+    border-color: #475009;
+    outline: none;
+}
+
+.custom-search__svg {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    color:#B7B7B7;
+>>>>>>> origin/main
 }

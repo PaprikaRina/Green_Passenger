@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .btn {
     display: block;
     width: 280px;
@@ -34,4 +35,42 @@
 .btn--secondary:hover {
     background-color: transparent;
     color: #502198;
+=======
+.btn {
+    display: block;
+    width: 280px;
+    border-radius: 30px;
+    border: 2px solid #502198;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 18px;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 16px;
+    color: #502198;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #502198;
+    color:#FFFFFF;
+}
+
+.btn:focus-visible {
+    outline: none;
+}
+
+.btn--secondary {
+    width: 420px;
+    font-size: 24px;
+    line-height: 24px;
+    background-color: #502198;
+    color: #FFFFFF;
+    padding: 30px;
+}
+
+.btn--secondary:hover {
+    background-color: transparent;
+    color: #502198;
+>>>>>>> origin/main
 }

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .social {
     margin: 0;
     padding: 0;
@@ -36,4 +37,44 @@
 .social__link:focus-visible {
     outline: none;
     background-color:#502198;
+=======
+.social {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    
+}
+
+.social__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: #475009;
+    position: relative;
+}
+
+.social__link::before {
+    content: "";
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.social__link:hover {
+    background-color: rgba(71, 80, 9, 0.7);
+}
+
+.social__link:focus-visible {
+    outline: none;
+    background-color:#502198;
+>>>>>>> origin/main
 }

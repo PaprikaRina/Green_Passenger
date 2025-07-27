@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /*Global*/
 /*-----------------------------------*/
 @import "global/reboot.css";
@@ -28,4 +29,36 @@
 @import "blocks/custom-search.css";
 @import "blocks/order-card.css";
 @import "blocks/order-form.css";
+=======
+/*Global*/
+/*-----------------------------------*/
+@import "global/reboot.css";
+@import "global/font.css";
+@import "global/visually-hidden.css";
+@import "global/container.css";
+
+/*Blocks*/
+/*-----------------------------------*/
+@import "blocks/page-content.css";
+@import "blocks/products.css";
+@import "blocks/header.css";
+@import "blocks/main-nav.css";
+@import "blocks/hero.css";
+@import "blocks/btn.css";
+@import "blocks/about-company.css";
+@import "blocks/aside-nav.css";
+@import "blocks/social.css";
+@import "blocks/footer.css";
+@import "blocks/user-form.css";
+@import "blocks/stocks.css";
+@import "blocks/product-card.css";
+@import "blocks/cookie.css";
+@import "blocks/custom-radio.css";
+@import "blocks/custom-input.css";
+@import "blocks/custom-checkbox.css";
+@import "blocks/custom-textarea.css";
+@import "blocks/custom-search.css";
+@import "blocks/order-card.css";
+@import "blocks/order-form.css";
+>>>>>>> origin/main
 @import "blocks/order.css";

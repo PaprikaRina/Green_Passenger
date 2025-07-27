@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .about-company {
     margin-bottom: 70px;
 }
@@ -60,4 +61,68 @@
     font-size: 20px;
     line-height: 24px;
     color:#475009;
+=======
+.about-company {
+    margin-bottom: 70px;
+}
+.about-company__wrapper {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 21px 50px;
+    margin: 0 0 50px;
+    align-items: start;
+}
+
+.about-company__img {
+    height: 300px;
+    width: 300px;
+    border-radius: 30px;
+    overflow: hidden;
+    grid-row: 2 / 3;
+}
+
+.about-company__description {
+    display: grid;
+    gap: 20px;
+    grid-row: span 2;
+}
+
+.about-company__text { 
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    color:#475009;
+    margin:0;
+}
+
+.about-company__list {
+    margin: 0 0 50px;
+    padding: 0;
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.about-company__item {
+    border-radius: 20px;
+    background-color: #F4F6FA;
+    padding: 32px 25px;
+}
+
+.about-company__item--xl {
+    grid-column: span 2;
+}
+
+.about-company__btn {
+    margin: 0 auto 0;
+}
+
+.about-company__card-text {
+    margin: 0; 
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color:#475009;
+>>>>>>> origin/main
 }
