@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!-- CSS -->
+  <link href="css/style.css" rel="stylesheet" />
+
+  <title>Plant_Shop</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header__top">
+        <div class="header__contacts">
+          <a class="header__phone" href="tel:+79279999999">
+            <svg width="16" height="16" aria-hidden="true">
+              <use xlink:href="img/sprite/sprite.svg#phone-icon"></use>
+            </svg>
+            <span class="header__phone-text">+7&nbsp;927 999-99-99</span>
+          </a>
+          <button class="header__callback" type="button">Перезвоните мне</button>
+        </div>
+        <a class="header__logo" href="index.html" aria-label="Перейти на главную страницу">
+          <svg width="386" height="68" aria-hidden="true">
+            <use xlink:href="img/sprite/sprite.svg#logo-icon-header"></use>
+          </svg>
+        </a>
+        <div class="header__users">
+          <ul class="header__user-list">
+            <li class="header__user-item">
+              <a class="header__user-link" href="user-form.html">
+                <svg class="header__user-icon" width="24" height="24" aria-hidden="true">
+                  <use xlink:href="img/sprite/sprite.svg#user-icon"></use>
+                </svg>
+                <span class="header__user-text">Войти</span>
+              </a>
+            </li>
+            <li class="header__user-item">
+              <a class="header__user-link" href="order.html" aria-label="Перейти в корзину">
+                <svg class="header__user-icon" width="24" height="24" aria-hidden="true">
+                  <use xlink:href="img/sprite/sprite.svg#basket-icon"></use>
+                </svg>
+                <span class="header__user-count" aria-hidden="true">0</span>
+              </a>
+            </li>
+            <li class="header__user-item">
+              <a class="header__user-link" href="#" aria-label="Перейти в избранное">
+                <svg class="header__user-icon" width="24" height="24" aria-hidden="true">
+                  <use xlink:href="img/sprite/sprite.svg#star-icon"></use>
+                </svg>
+                <span class="header__user-count" aria-hidden="true">0</span>
+              </a>
+            </li>
+          </ul>
+          <button class="header__burger" type="button" aria-label="Кнопка бургерного меню">
+            <svg width="38" height="38" aria-hidden="true">
+              <use xlink:href="img/sprite/sprite.svg#burger-icon"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+      <nav class="main-nav">
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">
+              <svg width="14" height="14" aria-hidden="true">
+                <use xlink:href="img/sprite/sprite.svg#leaf-icon"></use>
+              </svg>
+              <span class="main-nav__text">О&nbsp;Растениях</span>
+            </a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">
+              <svg width="14" height="14" aria-hidden="true">
+                <use xlink:href="img/sprite/sprite.svg#leaf-icon"></use>
+              </svg>
+              <span class="main-nav__text">О&nbsp;Компании</span>
+            </a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">
+              <svg width="14" height="14" aria-hidden="true">
+                <use xlink:href="img/sprite/sprite.svg#leaf-icon"></use>
+              </svg>
+              <span class="main-nav__text">Сотрудничество</span>
+            </a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="shop.html">
+              <svg width="14" height="14" aria-hidden="true">
+                <use xlink:href="img/sprite/sprite.svg#leaf-icon"></use>
+              </svg>
+              <span class="main-nav__text">Каталог</span>
+            </a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="shop.html">
+              <svg width="14" height="14" aria-hidden="true">
+                <use xlink:href="img/sprite/sprite.svg#leaf-icon"></use>
+              </svg>
+              <span class="main-nav__text">Контакты</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <div class="container">
+      <div class="page-content">
+        <h1 class="page-content__title">
+          Интернет магазин комнатных растений &laquo;Зеленый Пассажир&raquo;
+        </h1>
+        <p class="page-content__text">Вместе с&nbsp;нами растет жизнь</p>
+        <ul class="products">
+          <li class="products__item">
+            <a class="product-card" href="#">
+              <h2 class="product-card__title">Сциндапсус</h2>
+              <div class="product-card__wrapper">
+                <div class="product-card__heading">
+                  <img class="product-card__img" src="/img/skindapsus.jpg" width="228" height="152" alt="Сциндапсус" />
+                  <span class="product-card__name">Skindapsus</span>
+                </div>
+                <div class="product-card__info-wrapper">
+                  <p class="product-card__description">
+                    Сциндапсус&nbsp;&mdash; это экзотическое растение
+                    с&nbsp;привлекательными листьями и&nbsp;уникальным внешним видом. Его
+                    листья обычно круглые и&nbsp;мясистые, а&nbsp;также часто имеют
+                    интересные узоры и&nbsp;цветовую гамму, которая может варьироваться
+                    от&nbsp;ярко-зеленой до&nbsp;более необычных оттенков.
+                  </p>
+                  <div class="product-card_info">
+                    <div class="product-card__care">
+                      <div class="product-card__care-group">
+                        <span class="product-card__care-condition">Полив:</span>
+                        <span class="product-card__care-value">Умеренный</span>
+                      </div>
+                      <div class="product-card__care-group product-card__care-group--right">
+                        <span class="product-card__care-condition">Солнце:</span>
+                        <span class="product-card__care-value">Рассеянное</span>
+                      </div>
+                    </div>
+                    <div class="product-card__btns">
+                      <button class="btn product-card__btn"
+                        type="button">В&nbsp;избранное</button>
+                      <button class="btn btn--secondary product-card__btn" type="button">1200&nbsp;руб.</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li class="products__item">
+            <a class="product-card" href="#">
+              <h2 class="product-card__title">Лавр</h2>
+              <div class="product-card__wrapper">
+                <div class="product-card__heading">
+                  <img class="product-card__img" src="/img/lavr.jpg" width="228" height="152" alt="Лавр" />
+                  <span class="product-card__name">Laurus</span>
+                </div>
+                <div class="product-card__info-wrapper">
+                  <p class="product-card__description">
+                    Лавр обыкновенный (Laurus nobilis), также известный как лавровое дерево или лавровый
+                    куст,&nbsp;&mdash;
+                    это
+                    вечнозеленое растение, широко известное своими ароматными листьями, которые используются
+                    в&nbsp;кулинарии.
+                    Лавр произрастает в&nbsp;южных регионах Европы и&nbsp;Средиземноморья. Его листья имеют насыщенный
+                    аромат
+                    и&nbsp;используются для придания вкуса различным блюдам, таким как супы, соусы и&nbsp;маринады.
+                    Кроме
+                    того,
+                    лавровое дерево имеет декоративное значение и&nbsp;может вырастать в&nbsp;виде кустарника или
+                    небольшого
+                    дерева.
+                  </p>
+                  <div class="product-card_info">
+                    <div class="product-card__care">
+                      <div class="product-card__care-group">
+                        <span class="product-card__care-condition">Полив:</span>
+                        <span class="product-card__care-value">Умеренный</span>
+                      </div>
+                      <div class="product-card__care-group product-card__care-group--right">
+                        <span class="product-card__care-condition">Солнце:</span>
+                        <span class="product-card__care-value">Яркое</span>
+                      </div>
+                    </div>
+                    <div class="product-card__btns">
+                      <button class="btn product-card__btn product-card__btn--secondary"
+                        type="button">В&nbsp;избранное</button>
+                      <button class="btn btn--secondary product-card__btn" type="button">600&nbsp;руб.</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li class="products__item">
+            <a class="product-card" href="#">
+              <h2 class="product-card__title">Бамбук</h2>
+              <div class="product-card__wrapper">
+                <div class="product-card__heading">
+                  <img class="product-card__img" src="/img/bambuk.jpg" width="228" height="152" alt="Бамбук" />
+                  <span class="product-card__name">Bambusa</span>
+                </div>
+                <div class="product-card__info-wrapper">
+                  <p class="product-card__description">
+                    Бамбук (Bambusa)&nbsp;&mdash; это красивое и&nbsp;быстрорастущее растение, известное своими высокими
+                    стеблями, которые называются колоссами. Это растение преимущественно встречается в&nbsp;тропических
+                    и&nbsp;субтропических регионах и&nbsp;является важным источником строительного и&nbsp;декоративного
+                    материала.
+                  </p>
+                  <div class="product-card_info">
+                    <div class="product-card__care">
+                      <div class="product-card__care-group">
+                        <span class="product-card__care-condition">Полив:</span>
+                        <span class="product-card__care-value">Редко</span>
+                      </div>
+                      <div class="product-card__care-group product-card__care-group--right">
+                        <span class="product-card__care-condition">Солнце:</span>
+                        <span class="product-card__care-value">Яркое</span>
+                      </div>
+                    </div>
+                    <div class="product-card__btns">
+                      <button class="btn product-card__btn product-card__btn--secondary"
+                        type="button">В&nbsp;избранное</button>
+                      <button class="btn btn--secondary product-card__btn" type="button">1300&nbsp;руб.</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li class="products__item">
+            <a class="product-card" href="#">
+              <h2 class="product-card__title">Драцена</h2>
+              <div class="product-card__wrapper">
+                <div class="product-card__heading">
+                  <img class="product-card__img" src="/img/dracaena.jpg" width="228" height="152" alt="Драцена" />
+                  <span class="product-card__name">Dracaena</span>
+                </div>
+                <div class="product-card__info-wrapper">
+                  <p class="product-card__description">
+                    Драцена (Dracaena)&nbsp;&mdash; это род декоративных растений семейства спаржевых (Asparagaceae).
+                    Они
+                    обладают длинными, узкими листьями и&nbsp;прекрасным внешним видом, что делает их&nbsp;популярными
+                    как
+                    комнатные растения. Драцены могут иметь разнообразные окраски листьев, включая зеленые, красные,
+                    желтые
+                    и&nbsp;пурпурные оттенки, что добавляет разнообразия и&nbsp;красоты в&nbsp;интерьере. Они также
+                    считаются
+                    очень неприхотливыми и&nbsp;легкими в&nbsp;уходе, что делает их&nbsp;отличным выбором для начинающих
+                    садоводов.
+                  </p>
+                  <div class="product-card_info">
+                    <div class="product-card__care">
+                      <div class="product-card__care-group">
+                        <span class="product-card__care-condition">Полив:</span>
+                        <span class="product-card__care-value">Обильный</span>
+                      </div>
+                      <div class="product-card__care-group product-card__care-group--right">
+                        <span class="product-card__care-condition">Солнце:</span>
+                        <span class="product-card__care-value">Рассеянное</span>
+                      </div>
+                    </div>
+                    <div class="product-card__btns">
+                      <button class="btn product-card__btn product-card__btn--secondary"
+                        type="button">В&nbsp;избранное</button>
+                      <button class="btn btn--secondary product-card__btn" type="button">1500&nbsp;руб.</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li class="products__item">
+            <a class="product-card" href="#">
+              <h2 class="product-card__title">Пальма</h2>
+              <div class="product-card__wrapper">
+                <div class="product-card__heading">
+                  <img class="product-card__img" src="/img/palma.jpg" width="228" height="152" alt="Пальма" />
+                  <span class="product-card__name">Palma</span>
+                </div>
+                <div class="product-card__info-wrapper">
+                  <p class="product-card__description">
+                    Пальма небольшая в&nbsp;горшке&nbsp;&mdash; это миниатюрное растение из&nbsp;семейства пальмовых
+                    (Arecaceae). Она обладает красивой перистой листвой и&nbsp;компактным стволом, что делает
+                    ее&nbsp;отличным
+                    декоративным элементом для интерьеров. Эта мини-пальма легко ухаживать и&nbsp;подходит для украшения
+                    небольших помещений.
+                  </p>
+                  <div class="product-card_info">
+                    <div class="product-card__care">
+                      <div class="product-card__care-group">
+                        <span class="product-card__care-condition">Полив:</span>
+                        <span class="product-card__care-value">Редко</span>
+                      </div>
+                      <div class="product-card__care-group product-card__care-group--right">
+                        <span class="product-card__care-condition">Солнце:</span>
+                        <span class="product-card__care-value">Рассеянное</span>
+                      </div>
+                    </div>
+                    <div class="product-card__btns">
+                      <button class="btn product-card__btn product-card__btn--secondary"
+                        type="button">В&nbsp;избранное</button>
+                      <button class="btn btn--secondary product-card__btn" type="button">2300&nbsp;руб.</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li class="products__item">
+            <a class="product-card" href="#">
+              <h2 class="product-card__title">Крестовник</h2>
+              <div class="product-card__wrapper">
+                <div class="product-card__heading">
+                  <img class="product-card__img" src="/img/spathiph.jpg" width="228" height="152" alt="Крестовник" />
+                  <span class="product-card__name">Senecio</span>
+                </div>
+                <div class="product-card__info-wrapper">
+                  <p class="product-card__description">
+                    Растение семейства астровых Senecio, известное как крестовник, представляет собой удивительно
+                    красивое и
+                    разнообразное семейство растений. Крестовики могут быть как многолетними, так и однолетними, их
+                    родина -
+                    Африка, но некоторые виды встречаются и в других регионах мира. Характерной особенностью крестовика
+                    являются
+                    его декоративные сочные листья и красивые соцветия.
+                  </p>
+                  <div class="product-card_info">
+                    <div class="product-card__care">
+                      <div class="product-card__care-group">
+                        <span class="product-card__care-condition">Полив:</span>
+                        <span class="product-card__care-value">Обильный</span>
+                      </div>
+                      <div class="product-card__care-group product-card__care-group--right">
+                        <span class="product-card__care-condition">Солнце:</span>
+                        <span class="product-card__care-value">Тень</span>
+                      </div>
+                    </div>
+                    <div class="product-card__btns">
+                      <button class="btn product-card__btn product-card__btn--secondary"
+                        type="button">В&nbsp;избранное</button>
+                      <button class="btn btn--secondary product-card__btn" type="button">1200&nbsp;руб.</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </li>
+        </ul>
+        <ul class="products products--flat">
+          <li class="products__item">
+            <div class="product-card product-card--flat">
+              <h2 class="product-card__title">Сциндапсус</h2>
+              <div class="product-card__wrapper">
+                <div class="product-card__heading">
+                  <img class="product-card__img" src="/img/skindapsus.jpg" width="228" height="152" alt="Сциндапсус" />
+                  <span class="product-card__name">Skindapsus</span>
+                </div>
+                <div class="product-card__info-wrapper">
+                  <p class="product-card__description">
+                    Сциндапсус&nbsp;&mdash; это экзотическое растение
+                    с&nbsp;привлекательными листьями и&nbsp;уникальным внешним видом. Его
+                    листья обычно круглые и&nbsp;мясистые, а&nbsp;также часто имеют
+                    интересные узоры и&nbsp;цветовую гамму, которая может варьироваться
+                    от&nbsp;ярко-зеленой до&nbsp;более необычных оттенков.
+                  </p>
+                  <div class="product-card_info">
+                    <div class="product-card__care">
+                      <div class="product-card__care-group">
+                        <span class="product-card__care-condition">Полив:</span>
+                        <span class="product-card__care-value">Умеренный</span>
+                      </div>
+                      <div class="product-card__care-group product-card__care-group--right">
+                        <span class="product-card__care-condition">Солнце:</span>
+                        <span class="product-card__care-value">Рассеянное</span>
+                      </div>
+                    </div>
+                    <div class="product-card__btns">
+                      <a class="btn product-card__btn btn--secondary" href="#">В&nbsp;избранное</a>
+                      <a class="btn product-card__btn" href="#">1200&nbsp;руб.</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="products__item">
+            <div class="product-card product-card--flat">
+              <h2 class="product-card__title">Лавр</h2>
+              <div class="product-card__wrapper">
+                <div class="product-card__heading">
+                  <img class="product-card__img" src="/img/lavr.jpg" width="228" height="152" alt="Лавр" />
+                  <span class="product-card__name">Laurus</span>
+                </div>
+                <div class="product-card__info-wrapper">
+                  <p class="product-card__description">
+                    Лавр обыкновенный (Laurus nobilis), также известный как лавровое дерево или лавровый
+                    куст,&nbsp;&mdash;
+                    это
+                    вечнозеленое растение, широко известное своими ароматными листьями, которые используются
+                    в&nbsp;кулинарии.
+                    Лавр произрастает в&nbsp;южных регионах Европы и&nbsp;Средиземноморья. Его листья имеют насыщенный
+                    аромат
+                    и&nbsp;используются для придания вкуса различным блюдам, таким как супы, соусы и&nbsp;маринады.
+                    Кроме
+                    того,
+                    лавровое дерево имеет декоративное значение и&nbsp;может вырастать в&nbsp;виде кустарника или
+                    небольшого
+                    дерева.
+                  </p>
+                  <div class="product-card_info">
+                    <div class="product-card__care">
+                      <div class="product-card__care-group">
+                        <span class="product-card__care-condition">Полив:</span>
+                        <span class="product-card__care-value">Умеренный</span>
+                      </div>
+                      <div class="product-card__care-group product-card__care-group--right">
+                        <span class="product-card__care-condition">Солнце:</span>
+                        <span class="product-card__care-value">Яркое</span>
+                      </div>
+                    </div>
+                    <div class="product-card__btns">
+                      <a class="btn product-card__btn btn--secondary" href="#">В&nbsp;избранное</a>
+                      <a class="btn product-card__btn" href="#">600&nbsp;руб.</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="products__item">
+            <div class="product-card product-card--flat">
+              <h2 class="product-card__title">Бамбук</h2>
+              <div class="product-card__wrapper">
+                <div class="product-card__heading">
+                  <img class="product-card__img" src="/img/bambuk.jpg" width="228" height="152" alt="Бамбук" />
+                  <span class="product-card__name">Bambusa</span>
+                </div>
+                <div class="product-card__info-wrapper">
+                  <p class="product-card__description">
+                    Бамбук (Bambusa)&nbsp;&mdash; это красивое и&nbsp;быстрорастущее растение, известное своими высокими
+                    стеблями, которые называются колоссами. Это растение преимущественно встречается в&nbsp;тропических
+                    и&nbsp;субтропических регионах и&nbsp;является важным источником строительного и&nbsp;декоративного
+                    материала.
+                  </p>
+                  <div class="product-card_info">
+                    <div class="product-card__care">
+                      <div class="product-card__care-group">
+                        <span class="product-card__care-condition">Полив:</span>
+                        <span class="product-card__care-value">Редко</span>
+                      </div>
+                      <div class="product-card__care-group product-card__care-group--right">
+                        <span class="product-card__care-condition">Солнце:</span>
+                        <span class="product-card__care-value">Яркое</span>
+                      </div>
+                    </div>
+                    <div class="product-card__btns">
+                      <a class="btn product-card__btn btn--secondary" href="#">В&nbsp;избранное</a>
+                      <a class="btn product-card__btn" href="#">1300&nbsp;руб.</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="products__item">
+            <div class="product-card product-card--flat">
+              <h2 class="product-card__title">Драцена</h2>
+              <div class="product-card__wrapper">
+                <div class="product-card__heading">
+                  <img class="product-card__img" src="/img/dracaena.jpg" width="228" height="152" alt="Драцена" />
+                  <span class="product-card__name">Dracaena</span>
+                </div>
+                <div class="product-card__info-wrapper">
+                  <p class="product-card__description">
+                    Драцена (Dracaena)&nbsp;&mdash; это род декоративных растений семейства спаржевых (Asparagaceae).
+                    Они
+                    обладают длинными, узкими листьями и&nbsp;прекрасным внешним видом, что делает их&nbsp;популярными
+                    как
+                    комнатные растения. Драцены могут иметь разнообразные окраски листьев, включая зеленые, красные,
+                    желтые
+                    и&nbsp;пурпурные оттенки, что добавляет разнообразия и&nbsp;красоты в&nbsp;интерьере. Они также
+                    считаются
+                    очень неприхотливыми и&nbsp;легкими в&nbsp;уходе, что делает их&nbsp;отличным выбором для начинающих
+                    садоводов.
+                  </p>
+                  <div class="product-card_info">
+                    <div class="product-card__care">
+                      <div class="product-card__care-group">
+                        <span class="product-card__care-condition">Полив:</span>
+                        <span class="product-card__care-value">Обильный</span>
+                      </div>
+                      <div class="product-card__care-group product-card__care-group--right">
+                        <span class="product-card__care-condition">Солнце:</span>
+                        <span class="product-card__care-value">Рассеянное</span>
+                      </div>
+                    </div>
+                    <div class="product-card__btns">
+                      <a class="btn product-card__btn btn--secondary" href="#">В&nbsp;избранное</a>
+                      <a class="btn product-card__btn" href="#">1500&nbsp;руб.</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="products__item">
+            <div class="product-card product-card--flat">
+              <h2 class="product-card__title">Пальма</h2>
+              <div class="product-card__wrapper">
+                <div class="product-card__heading">
+                  <img class="product-card__img" src="/img/palma.jpg" width="228" height="152" alt="Пальма" />
+                  <span class="product-card__name">Palma</span>
+                </div>
+                <div class="product-card__info-wrapper">
+                  <p class="product-card__description">
+                    Пальма небольшая в&nbsp;горшке&nbsp;&mdash; это миниатюрное растение из&nbsp;семейства пальмовых
+                    (Arecaceae). Она обладает красивой перистой листвой и&nbsp;компактным стволом, что делает
+                    ее&nbsp;отличным
+                    декоративным элементом для интерьеров. Эта мини-пальма легко ухаживать и&nbsp;подходит для украшения
+                    небольших помещений.
+                  </p>
+                  <div class="product-card_info">
+                    <div class="product-card__care">
+                      <div class="product-card__care-group">
+                        <span class="product-card__care-condition">Полив:</span>
+                        <span class="product-card__care-value">Редко</span>
+                      </div>
+                      <div class="product-card__care-group product-card__care-group--right">
+                        <span class="product-card__care-condition">Солнце:</span>
+                        <span class="product-card__care-value">Рассеянное</span>
+                      </div>
+                    </div>
+                    <div class="product-card__btns">
+                      <a class="btn product-card__btn btn--secondary" href="#">В&nbsp;избранное</a>
+                      <a class="btn product-card__btn" href="#">2300&nbsp;руб.</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="products__item">
+            <div class="product-card product-card--flat">
+              <h2 class="product-card__title">Крестовник</h2>
+              <div class="product-card__wrapper">
+                <div class="product-card__heading">
+                  <img class="product-card__img" src="/img/spathiph.jpg" width="228" height="152" alt="Крестовник" />
+                  <span class="product-card__name">Senecio</span>
+                </div>
+                <div class="product-card__info-wrapper">
+                  <p class="product-card__description">
+                    Растение семейства астровых Senecio, известное как крестовник, представляет собой удивительно
+                    красивое и
+                    разнообразное семейство растений. Крестовики могут быть как многолетними, так и однолетними, их
+                    родина -
+                    Африка, но некоторые виды встречаются и в других регионах мира. Характерной особенностью крестовика
+                    являются
+                    его декоративные сочные листья и красивые соцветия.
+                  </p>
+                  <div class="product-card_info">
+                    <div class="product-card__care">
+                      <div class="product-card__care-group">
+                        <span class="product-card__care-condition">Полив:</span>
+                        <span class="product-card__care-value">Обильный</span>
+                      </div>
+                      <div class="product-card__care-group product-card__care-group--right">
+                        <span class="product-card__care-condition">Солнце:</span>
+                        <span class="product-card__care-value">Тень</span>
+                      </div>
+                    </div>
+                    <div class="product-card__btns">
+                      <a class="btn product-card__btn btn--secondary" href="#">В&nbsp;избранное</a>
+                      <a class="btn product-card__btn" href="#">1200&nbsp;руб.</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__wrapper">
+        <div class="footer__left">
+          <a class="footer__logo" href="index.html" aria-label="Ссылка на главную страницу">
+            <svg width="202" height="60" aria-hidden="true">
+              <use xlink:href="img/sprite/sprite.svg#logo-icon-footer"></use>
+            </svg>
+          </a>
+          <ul class="footer__social social">
+            <li class="social__item">
+              <a class="social__link" href="#" target="_blank" aria-label="Ссылка на Вконтакте">
+                <svg width="22" height="13" aria-hidden="true">
+                  <use xlink:href="img/sprite/sprite.svg#VK-icon"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="#" target="_blank" aria-label="Ссылка на Одноклассники">
+                <svg width="15" height="22" aria-hidden="true">
+                  <use xlink:href="img/sprite/sprite.svg#OK-icon"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <ul class="footer__nav-list">
+          <li class="footer__nav-item">
+            <a class="footer__nav-link" href="#">О Растениях</a>
+          </li>
+          <li class="footer__nav-item">
+            <a class="footer__nav-link" href="#">О компании</a>
+          </li>
+          <li class="footer__nav-item">
+            <a class="footer__nav-link" href="#">Сотрудничеств</a>
+          </li>
+          <li class="footer__nav-item">
+            <a class="footer__nav-link" href="shop.html">Каталог</a>
+          </li>
+          <li class="footer__nav-item">
+            <a class="footer__nav-link" href="#">Новости</a>
+          </li>
+          <li class="footer__nav-item">
+            <a class="footer__nav-link" href="#">Контакты</a>
+          </li>
+        </ul>
+        <div class="footer__right">
+          <div class="footer__contact">
+            <span class="footer__contact-text">Телефон:</span>
+            <a class="footer__contact-link" href="tel:+79279999999">+7 927 999-99-99</a>
+          </div>
+          <div class="footer__contact">
+            <span class="footer_contact-text">Почта:</span>
+            <a class="footer__contact-link" href="mailto:hello@gpassenger.ru">hello@gpassenger.ru</a>
+          </div>
+        </div>
+      </div>
+      <p class="footer__copyright">&copy;&nbsp;2023 зеленый пассажир, Все права защищены</p>
+    </div>
+  </footer>
+</body>
+
+</html>
