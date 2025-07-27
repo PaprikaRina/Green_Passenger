@@ -1,0 +1,46 @@
+.hero {
+    background-color: rgba(222, 236, 221, 0.8);
+    padding: 105px 0;
+    /*min-height: calc(100vh - 188px);/*Контент должен растягиваться на всю высоту экрана, поэтому мы вычитаем из высоты блока высоту хэдера*/
+    display: flex;
+    align-items: center;
+    margin: 0 0 60px;
+}
+
+.hero__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 640px;
+    gap: 55px;
+    align-items: center;
+}
+
+.hero__text {
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 40px;
+    letter-spacing: -0.05em;
+    color:#475009;
+    margin: 0 0 40px;
+}
+
+.hero__slogan { 
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 36px;
+    color:#475009;
+    margin: 0 0 50px;
+}
+
+.hero__gallery-list {
+    display: grid;
+    grid-template-columns: 305px 300px;
+    gap: 50px 35px;
+    margin: 0;
+    list-style-type: none;
+    padding: 0;
+}
+
+.hero__gallery-item--xl {
+    grid-row: span 2;
+}
+

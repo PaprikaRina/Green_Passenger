@@ -1,0 +1,21 @@
+.products {
+    margin: 0 0 70px;
+    padding: 0;
+    list-style-type: none;  
+    display:flex;
+    gap: 70px 30px;
+    flex-wrap: wrap;  
+   
+}
+
+.products--flat {
+    gap: 70px;
+}
+
+.products__item {
+    width: calc(33.33% - 20px);/* взяли все пространство за 100% и разделили на 3 карточки 33.33 и из этого вычли 20px( отступ между карточками 30 px т.е. 60 и разделили на 3 карточки и вычли от рамера карточки).*/ 
+}
+
+.products--flat .products__item {
+    width: 100%;
+}
