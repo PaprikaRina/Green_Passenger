@@ -20,7 +20,7 @@
                         </svg>
                         <span class="header__phone-text">+7&nbsp;927 999-99-99</span>
                     </a>
-                    <button class       ="header__callback" type="button">Перезвоните мне</button>
+                    <button class="header__callback" type="button">Перезвоните мне</button>
                 </div>
                 <a class="header__logo" href="index.html" aria-label="Перейти на главную страницу">
                     <svg width="386" height="68" aria-hidden="true">
@@ -29,7 +29,7 @@
                 </a>
                 <div class="header__users">
                     <ul class="header__user-list">
-                        <li class="header__user-item">      
+                        <li class="header__user-item">
                             <a class="header__user-link" href="user-form.html">
                                 <svg class="header__user-icon" width="24" height="24" aria-hidden="true">
                                     <use xlink:href="img/sprite/sprite.svg#user-icon"></use>
@@ -42,8 +42,8 @@
                                 <svg class="header__user-icon" width="24" height="24" aria-hidden="true">
                                     <use xlink:href="img/sprite/sprite.svg#basket-icon"></use>
                                 </svg>
-                                <span class="header__user-count" aria-hidden="true">0</span>    
-                            </a>        
+                                <span class="header__user-count" aria-hidden="true">0</span>
+                            </a>
                         </li>
                         <li class="header__user-item">
                             <a class="header__user-link" href="#" aria-label="Перейти в избранное">
@@ -231,6 +231,72 @@
                     </li>
                 </ul>
                 <a class="btn about-company__btn" href="#">Узнать подробнее</a>
+            </div>
+        </section>
+        <section class="application">
+            <div class="container">
+                <div class="application__wrapper">
+                    <h2 class="application__title">Оставить заявку</h2>
+                    <form class="application__form" action="#" method="POST">
+                        <div class="application__inner">
+                            <fieldset class="application__group">
+                                <legend class="application__group-name">Покупатель</legend>
+                                <div class="application__form-wrapper">
+                                    <div class="custom-input application__input">
+                                        <input class="custom-input__field" type="text" name="user-last-name"
+                                            id="user-last-name" placeholder="Кириллов" required>
+                                        <label class="custom-input__label" for="user-last-name">Фамилия *</label>
+                                        <span class="custom-input__error">Данное поле должно быть заполнено</span>
+                                    </div>
+                                    <div class="custom-input application__input">
+                                        <input class="custom-input__field" type="text" name="user-last-name"
+                                            id="user-name" placeholder="Олег" required>
+                                        <label class="custom-input__label" for="user-name">Имя *</label>
+                                        <span class="custom-input__error">Данное поле должно быть заполнено</span>
+                                    </div>
+                                </div>
+                            </fieldset>
+                            <fieldset class="application__group">
+                                <legend class="application__group-name">Контактная информация</legend>
+                                <div class="application__form-wrapper">
+                                    <div class="custom-input custom-input--icon application__input">
+                                        <input class="custom-input__field" type="tel" name="user-phone" id="user-phone"
+                                            placeholder="+7999999999" required>
+                                        <label class="custom-input__label" for="user-phone">
+                                            <span class="custom-input__label-text">Телефон *</span>
+                                        </label>
+                                        <svg class="custom-input__icon" width="24" height="24" aria-hidden="true">
+                                            <use xlink:href="images/sprite.svg#icon-phone-2"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="custom-input custom-input--icon application__input">
+                                        <input class="custom-input__field" type="email" name="user-mail" id="user-mail"
+                                            placeholder="mail@mail.ru">
+                                        <label class="custom-input__label" for="user-mail">
+                                            <span class="custom-input__label-text">Почта</span>
+                                        </label>
+                                        <svg class="custom-input__icon" width="24" height="24" aria-hidden="true">
+                                            <use xlink:href="images/sprite.svg#icon-mail"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </div>
+                        <button class="application__btn btn" type="submit">Оформить заказ</button>
+                        <div class="custom-checkbox application__checkbox">
+                            <input class="custom-checkbox__field visually-hidden" type="checkbox" id="agree"
+                                name="agree">
+                            <label for="agree" class="custom-checkbox__label">
+                                <span class="custom-checkbox__heading">Нажимая кнопку, вы соглашаетесь на <a
+                                        class="custom-checkbox__label-link" href="#">обработку ваших персональных
+                                        данных</a></span>
+                                <svg class="custom-checkbox__icon" width="18" height="13" aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#icon-check"></use>
+                                </svg>
+                            </label>
+                        </div>
+                    </form>
+                </div>
             </div>
         </section>
     </main>
