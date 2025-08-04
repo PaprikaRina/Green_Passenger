@@ -1,5 +1,7 @@
+@use "../_shared" as *;
+
 .custom-input {
-    width: 360px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     position: relative;

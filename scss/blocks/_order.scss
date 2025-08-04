@@ -1,3 +1,5 @@
+@use "../_shared" as *;
+
 .order {
   &__wrapper {
     display: grid;

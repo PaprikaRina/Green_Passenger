@@ -246,13 +246,13 @@
                                         <input class="custom-input__field" type="text" name="user-last-name"
                                             id="user-last-name" placeholder="Кириллов" required>
                                         <label class="custom-input__label" for="user-last-name">Фамилия *</label>
-                                        <span class="custom-input__error">Данное поле должно быть заполнено</span>
+                                        <span class="custom-input__text-error">Данное поле должно быть заполнено</span>
                                     </div>
                                     <div class="custom-input application__input">
                                         <input class="custom-input__field" type="text" name="user-last-name"
                                             id="user-name" placeholder="Олег" required>
                                         <label class="custom-input__label" for="user-name">Имя *</label>
-                                        <span class="custom-input__error">Данное поле должно быть заполнено</span>
+                                        <span class="custom-input__text-error">Данное поле должно быть заполнено</span>
                                     </div>
                                 </div>
                             </fieldset>
@@ -283,15 +283,15 @@
                             </fieldset>
                         </div>
                         <button class="application__btn btn" type="submit">Оформить заказ</button>
-                        <div class="custom-checkbox application__checkbox">
-                            <input class="custom-checkbox__field visually-hidden" type="checkbox" id="agree"
-                                name="agree">
-                            <label for="agree" class="custom-checkbox__label">
-                                <span class="custom-checkbox__heading">Нажимая кнопку, вы соглашаетесь на <a
-                                        class="custom-checkbox__label-link" href="#">обработку ваших персональных
+                        <div class="application-checkbox">
+                            <input class="application-checkbox__field visually-hidden" type="checkbox" id="agree"
+                                name="agree" checked>
+                            <label for="agree" class="application-checkbox__label">
+                                <span class="application-checkbox__heading">Нажимая кнопку, вы соглашаетесь на <a
+                                        class="application-checkbox__label-link" href="#">обработку ваших персональных
                                         данных</a></span>
-                                <svg class="custom-checkbox__icon" width="18" height="13" aria-hidden="true">
-                                    <use xlink:href="images/sprite.svg#icon-check"></use>
+                                <svg class="application-checkbox__icon" width="18" height="13" aria-hidden="true">
+                                    <use xlink:href="img/sprite/sprite.svg#true-checked-icon"></use>
                                 </svg>
                             </label>
                         </div>

@@ -1,11 +1,13 @@
 /*Global*/
 /*-----------------------------------*/
+@use "_shared" as *;
+
 
 @use "_variables" as *;
 @use "_mixins" as *;
 
-@use "global/_reboot";
 @use "global/_font";
+@use "global/_reboot";
 @use "global/_visually-hidden";
 @use "global/_container";
 
@@ -33,4 +35,4 @@
 @use "blocks/_order";
 @use "blocks/_order-card";
 @use "blocks/_order-form";
-@use "blocks/_application"
+@use "blocks/_application";

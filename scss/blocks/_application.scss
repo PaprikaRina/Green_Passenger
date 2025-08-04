@@ -1,5 +1,11 @@
+@use "../_shared" as *;
+
 .application {
   padding: 0 0 70px;
+  background-image: url("../../img/index_img/form-img.png");
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-size: 520px 496px;
 
   &__wrapper {
     max-width: 930px;
@@ -48,7 +54,81 @@
     padding: 14px;
   }
 
-  &__checkbox {
+  &-checkbox {
     width: 490px;
+
+      &--error &__label::before {
+        border-color: $color-salmon;
+      }
+
+      &--error &__icon {
+        color: $color-salmon;
+      }
+
+      &__field:checked + &__label &__icon {
+        display: block;
+      }
+
+      &__label {
+        position: relative;
+        padding: 0 0 0 45px;
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        user-select: none;
+        cursor: pointer;
+        color: $color-black;
+      }
+
+      &__label:hover::before {
+        border-color: $color-verdunGreen-70;
+      }
+
+      &__label:hover &__icon  {
+        color: $color-verdunGreen-70;
+      }
+
+      &__field:focus-visible + &__label::before {
+        border-color: $color-daisyBush;
+      }
+
+      &__field:focus-visible + &__label &__icon  {
+        color: $color-daisyBush;
+      }
+
+      &__label::before {
+        height: 30px;
+        width: 30px;
+        border-radius: 4px;
+        border: 2px solid $color-verdunGreen;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        content: "";
+        left: 0;
+      }
+
+      &__icon {
+        color: $color-verdunGreen;
+        display: none;
+        position: absolute;
+        left: 7px;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+
+      &__label-link {
+        text-decoration: underline;
+      }
+
+      &__heading {
+        font-size: 18px;
+        line-height: 24px;
+      }
+
+      &__text {
+        font-size: 12px;
+        line-height: 14px;
+      }
   }
 }

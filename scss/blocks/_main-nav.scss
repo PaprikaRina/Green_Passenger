@@ -1,3 +1,5 @@
+@use "../_shared" as *;
+
 .main-nav {
     &__list {
         @include listReset;
