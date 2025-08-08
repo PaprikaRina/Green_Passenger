@@ -1,5 +1,18 @@
+@use "../_shared" as *;
+
 .container {
-    width: 1280px;
+    max-width: 1280px;
     margin: 0 auto;
-    padding: 0 30px;
+    padding: 0 115px;
+
+    @include vp-1439 {
+        padding: 0 30px;
+    }
+
+    @include vp-767 {
+        padding: 0 15px;
+    }
 }
+
+
+

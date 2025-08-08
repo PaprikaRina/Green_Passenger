@@ -1,8 +1,16 @@
 @use "../_shared" as *;
 
 .main-nav {
+    @include vp-1439 {
+         display: none;
+    }
+    @include vp-767 {
+         display: none;
+    }
+    
     &__list {
         @include listReset;
+    
         display: grid;
         justify-content: center;
         grid-template-columns: repeat(5, auto);

@@ -1,3 +1,5 @@
+@use "_variables" as *;
+
 @mixin listReset {
     margin: 0;
     padding: 0;
@@ -13,6 +15,13 @@
 
 @mixin vp-767 {
     @media(max-width: $vp-mobile)
+    {
+        @content;
+    }
+}
+
+@mixin vp-hr {
+    @media(min-resolution: 2dppx)
     {
         @content;
     }

@@ -4,12 +4,34 @@
     box-shadow: 0px -2px 4px 0px $color-black-40;
     padding: 40px 0 30px;
 
+    @include vp-1439 {
+        padding: 30px 0 15px;
+    }
+
     &__wrapper {
         display: grid;
         grid-template-columns: 202px 1fr 202px;
         gap: 20px;
         align-items: center;
         margin-bottom: 40px;
+
+        @include vp-1439 {
+            grid-template-columns: 202px 1fr;
+            margin: 0 0 30px;
+        }
+
+        @include vp-767 {
+            grid-template-columns: 1fr;
+            gap: 25px;
+        }
+    }
+
+    &__left {
+        @include vp-767 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
     }
 
     &__logo {
@@ -25,6 +47,10 @@
 
     &__social {
         margin: 0 0 0 20px;
+
+        @include vp-767 {
+            margin: 0 0 0 0;
+        }
     }
 
     &__nav-list {
@@ -33,6 +59,10 @@
         grid-template-columns: auto auto;
         gap: 20px 50px;
         justify-content: center;
+
+        @include vp-1439 {
+            display: none;
+        }
     }
 
     &__nav-item {
@@ -59,14 +89,23 @@
     }
 
     &__right {
-        display: grid;
+        display: flex;
+        flex-direction: column;
         gap: 15px;
+
+        @include vp-767 {
+            align-items: center;
+        }
     }
 
     &__contact {
         display: flex;
         flex-direction: column;
         align-items: flex-end;
+
+        @include vp-767 {
+            align-items: center;
+        }
     }
 
     &__contact-text {
@@ -94,13 +133,17 @@
 
     &__copyright {
         display: flex;
-        justify-content: flex-end;
         margin: 0;
         font-weight: 700;
         font-size: 11px;
         line-height: 20px;
         text-transform: uppercase;
+        text-align: right;
         color:$color-verdunGreen;
+
+        @include vp-767 {
+            text-align: center;
+        }
     }
 }
 

@@ -54,7 +54,7 @@
                             </a>
                         </li>
                     </ul>
-                    <button class="header__burger" type="button" aria-label="Кнопка бугренного меню">
+                    <button class="header__burger" type="button" aria-label="Открыть выпадающее меню">
                         <svg width="38" height="38" aria-hidden="true">
                             <use xlink:href="img/sprite/sprite.svg#burger-icon"></use>
                         </svg>
@@ -112,7 +112,7 @@
             <div class="container">
                 <h1 class="visually-hidden">Интернет-магазин комнатных растений "Зеленый пассажир"</h1>
                 <div class="hero__wrapper">
-                    <div class="hero_inner">
+                    <div class="hero__inner">
                         <p class="hero__text">Присоединяйтесь к&nbsp;Зеленому Пассажиру и&nbsp;превратите свой дом
                             в&nbsp;настоящий оазис зелени и&nbsp;комфорта!</p>
                         <p class="hero__slogan">Вместе с&nbsp;нами растет жизнь</p>
@@ -120,16 +120,23 @@
                     </div>
                     <ul class="hero__gallery-list">
                         <li class="hero__gallery-item hero__gallery-item--xl">
-                            <img class="hero__gallery-img" src="img/index_img/gallery_plant_1.png" height="490"
-                                width="305" alt="Фотография комнатного растения">
+                            <picture>
+                                <source media="(max-width: 767px)"
+                                    srcset="img/index_img/gallery_plant_1-mobile.png 1x, img/index_img/gallery_plant_1-mobile@2x.png 2x">
+                                <img class="hero__gallery-img" src="img/index_img/gallery_plant_1.png"
+                                    srcset="img/index_img/gallery_plant_1@2x.png 2x" height="490" width="305"
+                                    alt="Фотография комнатного растения">
+                            </picture>
                         </li>
                         <li class="hero__gallery-item">
-                            <img class="hero__gallery-img" src="img/index_img/gallery_plant_2.png" height="220"
-                                width="300" alt="Фотография комнатного растения">
+                            <img class="hero__gallery-img" src="img/index_img/gallery_plant_2.png"
+                                srcset="img/index_img/gallery_plant_2@2x.png 2x" height="220" width="300"
+                                alt="Фотография комнатного растения">
                         </li>
                         <li class="hero__gallery-item">
-                            <img class="hero__gallery-img" src="img/index_img/gallery_plant_3.png" height="220"
-                                width="300" alt="Фотография комнатного растения">
+                            <img class="hero__gallery-img" src="img/index_img/gallery_plant_3.png"
+                                srcset="img/index_img/gallery_plant_3@2x.png 2x" height="220" width="300"
+                                alt="Фотография комнатного растения">
                         </li>
                     </ul>
                 </div>
@@ -164,7 +171,7 @@
                                         <use xlink:href="img/sprite/sprite.svg#succulents-icon"></use>
                                     </svg>
                                     <span class="aside-nav__text">Суккуленты</span>
-                                </a>
+                                </a>            
                             </li>
                             <li class="aside-nav__item">
                                 <a class="aside-nav__link" href="#">
@@ -176,8 +183,13 @@
                             </li>
                         </ul>
                     </aside>
-                    <img class="about-company__img" src="img/index_img/about_img.jpg" height="300" width="300"
-                        alt="Фотография девушки с цветком">
+                    <picture class="about-company__imgs">
+                        <source media="(max-width: 1439px)"
+                            srcset="img/index_img/about_img-tablet.jpg 1x, img/index_img/about_img-tablet@2x.jpg 2x">
+                        <img class="about-company__img" src="img/index_img/about_img.jpg"
+                            srcset="img/index_img/about_img@2x.jpg 2x" height="300" width="300"
+                            alt="Фотография девушки с цветком">
+                    </picture>
                     <div class="about-company__description">
                         <p class="about-company__text">
                             <b>&laquo;Зеленый Пассажир&raquo;</b>&nbsp;&mdash; это уникальный интернет-магазин,
@@ -233,7 +245,7 @@
                 <a class="btn about-company__btn" href="#">Узнать подробнее</a>
             </div>
         </section>
-        <section class="application">
+        <!-- <section class="application">
             <div class="container">
                 <div class="application__wrapper">
                     <h2 class="application__title">Оставить заявку</h2>
@@ -298,7 +310,7 @@
                     </form>
                 </div>
             </div>
-        </section>
+        </section>   -->
     </main>
     <footer class="footer">
         <div class="container">

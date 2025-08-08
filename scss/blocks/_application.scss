@@ -7,6 +7,10 @@
   background-position: bottom right;
   background-size: 520px 496px;
 
+  @include vp-hr {
+    background-image: url(../../img/index_img/form-img@2x.png);
+  }
+
   &__wrapper {
     max-width: 930px;
     margin: 0 auto;
