@@ -1,31 +1,78 @@
 @use "../_shared" as *;
 
 .application {
-  padding: 0 0 70px;
-  background-image: url("../../img/index_img/form-img.png");
-  background-repeat: no-repeat;
-  background-position: bottom right;
-  background-size: 520px 496px;
+    padding: 0 0 70px;
+    background-image: url("../../img/index_img/form-img.png");
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: 520px 496px;
 
-  @include vp-hr {
-    background-image: url(../../img/index_img/form-img@2x.png);
-  }
+    @include vp-hr {
+      background-image: url(../../img/index_img/form-img@2x.png);
+    }
 
-  &__wrapper {
-    max-width: 930px;
-    margin: 0 auto;
+    @include vp-1439 {
+      padding: 60px 0 55px;
+      background-image: url("../../img/index_img/form-img-tablet.png");
+      background-size: cover;
+    }
+
+    @include vp-767 {
+      padding: 30px 0 60px;
+      background-image: url("../../img/index_img/form-img-mobile.png");
+      background-size: cover;
+    }
+
+   @media (min-resolution: 2dppx) and (max-width: $vp-tablet) {
+      background-image: url(../../img/index_img/form-img-tablet@2x.png);
+   }
+
+   @media (min-resolution: 2dppx) and (max-width: $vp-mobile) {
+      background-image: url(../../img/index_img/form-img-mobile@2x.png);
+   }
+
+    &__wrapper {
+      max-width: 930px;
+      margin: 0 auto;
+
+      @include vp-1439 {
+        max-width: unset;
+    }
   }
 
   &__title {
     font-size: 30px;
     line-height: 36px;
     margin: 0 0 40px 0;
+
+    @include vp-1439 {
+      font-size: 24px;
+      line-height: 28px;
+      text-align: center;
+      margin: 0 0 30px;
+    }
+
+    @include vp-767 {
+      font-size: 20px;
+      line-height: 24px;
+    }
   }
 
   &__inner {
     display: flex;
     gap: 70px;
     margin: 0 0 40px 0;
+
+    @include vp-1439 {
+      gap: 48px;
+      margin: 0 0 36px;
+    }
+
+    @include vp-767 {
+      flex-direction: column;
+      gap: 27px;
+      margin: 0 0 35px;
+    }
   }
 
   &__group {
@@ -40,6 +87,18 @@
     margin: 0 0 30px 0;
     padding: 0;
     font-weight: 700;
+
+    @include vp-1439 {
+      font-size: 20px;
+      line-height: 24px;
+      margin: 0 0 25px;
+    }
+
+    @include vp-767 {
+      font-size: 18px;
+      line-height: 22px;
+      margin: 0 0 20px;
+    }
   }
 
   &__form-wrapper {
@@ -50,12 +109,30 @@
 
   &__input {
     width: 430px;
+
+    @include vp-1439 {
+      width: 330px;
+    }
+
+    @include vp-767 {
+      width: 100%;
+    }
   }
 
   &__btn {
     margin: 0 0 20px 0;
     width: 345px;
     padding: 14px;
+
+    @include vp-1439 {
+      width: 280px;
+      margin: 0 auto 20px;
+      padding: 15px;
+    }
+
+    @include vp-767 {
+      width: 200px;
+    }
   }
 
   &-checkbox {
@@ -82,6 +159,10 @@
         user-select: none;
         cursor: pointer;
         color: $color-black;
+
+        @include vp-767 {
+          padding: 0 0 0 30px;
+        }
       }
 
       &__label:hover::before {
@@ -110,6 +191,11 @@
         transform: translateY(-50%);
         content: "";
         left: 0;
+
+        @include vp-767 {
+          width: 20px;
+          height: 20px;
+        }
       }
 
       &__icon {
@@ -119,6 +205,12 @@
         left: 7px;
         top: 50%;
         transform: translateY(-50%);
+
+        @include vp-767 {
+          width: 11px;
+          height: 8px;
+          left: 5px;
+        }
       }
 
       &__label-link {
@@ -128,11 +220,30 @@
       &__heading {
         font-size: 18px;
         line-height: 24px;
+
+        @include vp-1439 {
+          font-size: 15px;
+          line-height: 20px;
+        }
+
+        @include vp-767 {
+          font-size: 12px;
+          line-height: 14px;
+        }
       }
 
       &__text {
         font-size: 12px;
         line-height: 14px;
+      }
+
+      @include vp-1439 {
+        margin: 0 auto;
+        width: 405px;
+      }
+
+      @include vp-767 {
+        width: 100%;
       }
   }
 }
