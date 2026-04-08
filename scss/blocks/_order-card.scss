@@ -4,52 +4,72 @@
   display: flex;
   align-items: center;
   gap: 20px;
+  font-weight: 700;
   font-size: 18px;
   line-height: 20px;
-  font-weight: 700;
+
+  @include vp-767 {
+    gap: 12px;
+    font-size: 14px;
+    line-height: 18px;
+  }
 
   &__inner {
     position: relative;
+    flex-shrink: 0;
     border-radius: 10px;
     overflow: hidden;
   }
 
   &__sale {
-    display: block;
-    width: 24px;
-    height: 13px;
-    border-radius: 5px;
-    background-color: $color-verdunGreen;
-    padding: 2px;
-    font-size: 10px;
-    line-height: 10px;
-    color: $color-white;
-    text-align: center;
     position: absolute;
     top: 5px;
     left: 5px;
+    display: block;
+    width: 24px;
+    height: 13px;
+    padding: 2px;
+    border-radius: 5px;
+    background-color: $color-verdunGreen;
+    font-size: 10px;
+    line-height: 10px;
+    text-align: center;
+    color: $color-white;
   }
 
   &__name {
+    min-width: 0;
+    color: $color-verdunGreen;
+
+    &:hover {
+      color: $color-verdunGreen-70;
+    }
+
+    &:focus-visible {
+      outline: 1px solid $color-verdunGreen-70;
+      outline-offset: 2px;
+    }
+  }
+
+  &__price {
+    margin-left: auto;
+    white-space: nowrap;
     color: $color-verdunGreen;
   }
-  &__price {
-    margin: 0 0 0 auto;
-  }
+
   &__price-old {
-    color: $color-verdunGreen-40;
     position: relative;
+    color: $color-verdunGreen-40;
 
     &::before {
       content: "";
-      height: 2px;
-      width: 100%;
-      background-color: $color-verdunGreen;
       position: absolute;
       top: 50%;
       left: 0;
+      width: 100%;
+      height: 2px;
+      background-color: $color-verdunGreen;
       transform: translateY(-50%);
     }
   }
 }
-

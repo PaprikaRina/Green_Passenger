@@ -1,16 +1,18 @@
 @use "../_shared" as *;
 
 .custom-checkbox {
+    width: 100%;
 
     &__label {
+        position: relative;
         display: flex;
         flex-direction: column;
         gap: 4px;
+        min-height: 30px;
+        padding: 0 0 0 45px;
+        color: $color-black;
         user-select: none;
         cursor: pointer;
-        color: $color-black;
-        position: relative;
-        padding: 0 0 0 45px;
     }
 
     &__heading {
@@ -19,7 +21,7 @@
         line-height: 24px;
     }
 
-    &__text {  
+    &__text {
         font-weight: 400;
         font-size: 12px;
         line-height: 14px;
@@ -27,31 +29,31 @@
 
     &__label::before {
         content: "";
+        position: absolute;
+        top: 50%;
+        left: 0;
         width: 30px;
         height: 30px;
         border: 2px solid $color-verdunGreen;
         border-radius: 4px;
-        position: absolute;
-        left: 0;
-        top: 50%;
         transform: translateY(-50%);
     }
 
     &__icon {
         position: absolute;
-        color: $color-verdunGreen;
-        left: 7px;
         top: 50%;
-        transform: translateY(-50%);
+        left: 7px;
         display: none;
+        color: $color-verdunGreen;
+        transform: translateY(-50%);
     }
 
     &__link {
+        color: inherit;
         text-decoration: underline;
-        color: $color-black;
     }
 
-    &__field:checked + &__label &__icon{
+    &__field:checked + &__label &__icon {
         display: block;
     }
 
@@ -72,13 +74,21 @@
         border-color: $color-salmon;
     }
 
+    &--error &__icon {
+        color: $color-salmon;
+    }
+
     &__field:focus-visible + &__label::before {
         border-color: $color-daisyBush;
         outline: none;
     }
 
     &__field:focus-visible + &__label &__icon {
-        color:$color-daisyBush
+        color: $color-daisyBush;
     }
 
+    &__field:focus-visible + &__label &__heading,
+    &__field:focus-visible + &__label &__text {
+        color: $color-daisyBush;
+    }
 }

@@ -1,18 +1,21 @@
 @use "../_shared" as *;
 
 .custom-search {
-    min-width: 260px;
     position: relative;
+    width: 100%;
+    max-width: 240px;
 
     &__field {
         width: 100%;
         font-family: inherit;
         border: none;
         border-bottom: 2px solid $color-pinkSwan;
-        padding: 13px 40px 13px 10px;
+        padding: 13px 44px 13px 10px;
         font-weight: 400;
         font-size: 14px;
         line-height: 14px;
+        color: $color-verdunGreen;
+        background-color: transparent;
 
         &::placeholder {
             color: $color-pinkSwan;
@@ -33,11 +36,15 @@
         top: 50%;
         right: 10px;
         transform: translateY(-50%);
-        color:$color-pinkSwan;
+        color: $color-pinkSwan;
+        pointer-events: none;
+    }
+
+    &__field:hover ~ &__svg {
+        color: $color-verdunGreen-70;
+    }
+
+    &__field:focus-visible ~ &__svg {
+        color: $color-verdunGreen;
     }
 }
-
-
-
-
-

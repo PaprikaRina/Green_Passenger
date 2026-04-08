@@ -5,8 +5,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="style.css">
-    <title>Order</title>
+
+    <title>Оформление заказа — Зеленый Пассажир</title>
+    <meta name="description"
+        content="Оформление заказа в интернет-магазине комнатных растений «Зеленый Пассажир». Укажите контактные данные, выберите доставку и способ оплаты.">
+    <meta name="keywords"
+        content="оформление заказа, купить комнатные растения, доставка растений, оплата заказа, интернет-магазин растений">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://example.com/order.html">
+
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="ru_RU">
+    <meta property="og:title" content="Оформление заказа — Зеленый Пассажир">
+    <meta property="og:description"
+        content="Оформите заказ на комнатные растения, выберите доставку и удобный способ оплаты.">
+    <meta property="og:url" content="https://example.com/order.html">
+    <meta property="og:site_name" content="Зеленый Пассажир">
+    <meta property="og:image" content="https://example.com/img/og-image.jpg">
+
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -14,38 +31,37 @@
         <div class="container">
             <div class="header__top">
                 <div class="header__contacts">
-                    <a class="header__phone" href="tel:+79279999999">
-                        <svg class="header__phone-svg" width="16" height="16" aria-hidden="true">
+                    <a class="header__phone" href="tel:+79279999999" aria-label="Позвонить по номеру +7 927 999 99 99">
+                        <svg width="16" height="16" aria-hidden="true">
                             <use xlink:href="img/sprite/sprite.svg#phone-icon"></use>
                         </svg>
                         <span class="header__phone-text">+7&nbsp;927 999-99-99</span>
                     </a>
                     <button class="header__callback" type="button">Перезвоните мне</button>
                 </div>
+
                 <a class="header__logo" href="index.html" aria-label="Перейти на главную страницу">
                     <svg width="386" height="68" aria-hidden="true">
                         <use xlink:href="img/sprite/sprite.svg#logo-icon-header"></use>
                     </svg>
                 </a>
+
                 <div class="header__users">
-                    <form class="header__search" action="#" method="GET">
-                        <div class="custom-search">
-                            <input class="custom-search__field" name="search-field "type="search" aria-label="Поле поиска" placeholder="Поиск">
-                            <svg class="custom-search__svg" width="18" height="18" aria-hidden="true">
-                            <use xlink:href="img/sprite/sprite.svg#search-header-icon"></use>
-                        </svg>
-                        </div>
-                    </form>
                     <ul class="header__user-list">
                         <li class="header__user-item">
-
+                            <a class="header__user-link" href="user-form.html" aria-label="Войти в личный кабинет">
+                                <svg class="header__user-icon" width="24" height="24" aria-hidden="true">
+                                    <use xlink:href="img/sprite/sprite.svg#user-icon"></use>
+                                </svg>
+                                <span class="header__user-text">Войти</span>
+                            </a>
                         </li>
                         <li class="header__user-item">
                             <a class="header__user-link" href="order.html" aria-label="Перейти в корзину">
                                 <svg class="header__user-icon" width="24" height="24" aria-hidden="true">
                                     <use xlink:href="img/sprite/sprite.svg#basket-icon"></use>
                                 </svg>
-                                <span class="header__user-count" aria-hidden="true">3</span>
+                                <span class="header__user-count" aria-hidden="true">0</span>
                             </a>
                         </li>
                         <li class="header__user-item">
@@ -57,16 +73,23 @@
                             </a>
                         </li>
                     </ul>
+
+                    <button class="header__burger" type="button" aria-label="Открыть выпадающее меню">
+                        <svg width="38" height="38" aria-hidden="true">
+                            <use xlink:href="img/sprite/sprite.svg#burger-icon"></use>
+                        </svg>
+                    </button>
                 </div>
             </div>
-            <nav class="main-nav">
+
+            <nav class="main-nav" aria-label="Основная навигация">
                 <ul class="main-nav__list">
                     <li class="main-nav__item">
                         <a class="main-nav__link" href="#">
                             <svg width="14" height="14" aria-hidden="true">
                                 <use xlink:href="img/sprite/sprite.svg#leaf-icon"></use>
                             </svg>
-                            <span class="main-nav__text">О&nbsp;Растениях</span>
+                            <span class="main-nav__text">О&nbsp;растениях</span>
                         </a>
                     </li>
                     <li class="main-nav__item">
@@ -74,9 +97,9 @@
                             <svg width="14" height="14" aria-hidden="true">
                                 <use xlink:href="img/sprite/sprite.svg#leaf-icon"></use>
                             </svg>
-                            <span class="main-nav__text">О&nbsp;Компании</span>
+                            <span class="main-nav__text">О&nbsp;компании</span>
                         </a>
-                    </li>       
+                    </li>
                     <li class="main-nav__item">
                         <a class="main-nav__link" href="#">
                             <svg width="14" height="14" aria-hidden="true">
@@ -94,7 +117,7 @@
                         </a>
                     </li>
                     <li class="main-nav__item">
-                        <a class="main-nav__link" href="shop.html">
+                        <a class="main-nav__link" href="#">
                             <svg width="14" height="14" aria-hidden="true">
                                 <use xlink:href="img/sprite/sprite.svg#leaf-icon"></use>
                             </svg>
@@ -105,41 +128,45 @@
             </nav>
         </div>
     </header>
+
     <main>
         <section class="order">
             <div class="container">
                 <div class="order__wrapper">
                     <div class="order__left-col">
                         <h1 class="order__title">Оформление заказа</h1>
-                        <form class="order-form" action="#" method="POST">
 
-                            <!-- Покупатель -->
-                            <fieldset class="order-form__group">
-                                <legend class="order-form__group-name">Покупатель</legend>
+                        <form class="order-form" action="#" method="post" aria-label="Форма оформления заказа">
+                            <div class="order-form__group">
+                                <h2 class="order-form__group-name">Покупатель</h2>
                                 <div class="order-form__inner">
                                     <div class="custom-input custom-input--error">
                                         <input class="custom-input__field" type="text" name="user-last-name"
-                                            id="user-last-name" placeholder="Кириллов" required>
+                                            id="user-last-name" placeholder="Кириллов" autocomplete="family-name"
+                                            required>
                                         <label class="custom-input__label" for="user-last-name">Фамилия *</label>
                                         <span class="custom-input__text-error">Данное поле должно быть заполнено</span>
                                     </div>
+
                                     <div class="custom-input">
                                         <input class="custom-input__field" type="text" name="user-name" id="user-name"
-                                            placeholder="Олег" required>
+                                            placeholder="Олег" autocomplete="given-name" required>
                                         <label class="custom-input__label" for="user-name">Имя *</label>
                                         <span class="custom-input__text-error">Данное поле должно быть заполнено</span>
                                     </div>
+
                                     <div class="custom-input">
                                         <input class="custom-input__field" type="text" name="user-surname"
-                                            id="user-surname" placeholder="Андреевич">
+                                            id="user-surname" placeholder="Андреевич" autocomplete="additional-name">
                                         <label class="custom-input__label" for="user-surname">Отчество</label>
                                         <span class="custom-input__text-error">Данное поле должно быть заполнено</span>
                                     </div>
+
                                     <div class="custom-checkbox">
                                         <input class="custom-checkbox__field visually-hidden" type="checkbox"
                                             name="client-true" id="client-true" checked>
                                         <label class="custom-checkbox__label" for="client-true">
-                                            <span class="custom-checkbox__heading">Стать постоянный клиентом</span>
+                                            <span class="custom-checkbox__heading">Стать постоянным клиентом</span>
                                             <span class="custom-checkbox__text">Вы&nbsp;сможете видеть историю заказов,
                                                 проще делать новые и&nbsp;получать скидки</span>
                                             <svg class="custom-checkbox__icon" width="18" height="13"
@@ -148,31 +175,32 @@
                                             </svg>
                                         </label>
                                     </div>
+
                                     <div class="custom-input">
                                         <input class="custom-input__field" type="password" name="user-password"
-                                            id="user-password" placeholder="Придумайте пароль" disabled>
+                                            id="user-password" placeholder="Придумайте пароль" disabled
+                                            autocomplete="new-password">
                                         <label class="custom-input__label" for="user-password">Пароль *</label>
                                     </div>
                                 </div>
+                            </div>
 
-                            </fieldset>
-
-                            <!-- Контактная информация -->
-                            <fieldset class="order-form__group">
-                                <legend class="order-form__group-name">Контактная информация</legend>
+                            <div class="order-form__group">
+                                <h2 class="order-form__group-name">Контактная информация</h2>
                                 <div class="order-form__inner">
                                     <div class="custom-input custom-input--user-contacts custom-input--error">
                                         <input class="custom-input__field" type="tel" name="user-phone" id="user-phone"
-                                            placeholder="+7999999999" required>
+                                            placeholder="+7 999 999-99-99" autocomplete="tel" required>
                                         <label class="custom-input__label" for="user-phone">Телефон *</label>
                                         <svg class="custom-input__icon" width="24" height="24" aria-hidden="true">
                                             <use xlink:href="img/sprite/sprite.svg#phone-form-icon"></use>
                                         </svg>
                                         <span class="custom-input__text-error">Данное поле должно быть заполнено</span>
                                     </div>
+
                                     <div class="custom-input custom-input--user-contacts custom-input--error">
                                         <input class="custom-input__field" type="email" name="user-email"
-                                            id="user-email" placeholder="mail@mail.ru">
+                                            id="user-email" placeholder="mail@mail.ru" autocomplete="email">
                                         <label class="custom-input__label" for="user-email">Почта</label>
                                         <svg class="custom-input__icon" width="24" height="24" aria-hidden="true">
                                             <use xlink:href="img/sprite/sprite.svg#email-form-icon"></use>
@@ -180,37 +208,37 @@
                                         <span class="custom-input__text-error">Данное поле должно быть заполнено</span>
                                     </div>
                                 </div>
-                            </fieldset>
-                            <!-- Комментарий к заказу -->
-                            <fieldset class="order-form__group">
-                                <legend class="order-form__group-name">Комментарий к заказу</legend>
+                            </div>
+
+                            <div class="order-form__group">
+                                <h2 class="order-form__group-name">Комментарий к заказу</h2>
                                 <div class="order-form__inner">
                                     <div class="custom-textarea">
                                         <textarea class="custom-textarea__field" name="comment"
-                                            aria-label="Введите Ваш комментарий"
+                                            aria-label="Введите ваш комментарий"
                                             placeholder="Введите ваш комментарий"></textarea>
                                     </div>
                                 </div>
-                            </fieldset>
-                            <!-- Бонусы / скидки -->
-                            <fieldset class="order-form__group">
-                                <legend class="order-form__group-name">Бонусы / скидки</legend>
+                            </div>
+
+                            <div class="order-form__group">
+                                <h2 class="order-form__group-name">Бонусы / скидки</h2>
                                 <div class="order-form__inner">
                                     <div class="custom-input">
                                         <input class="custom-input__field" type="text" name="promo" id="promo"
-                                            value="GP314-20" placeholder="Введите Промокод">
+                                            value="GP314-20" placeholder="Введите промокод">
                                         <label class="custom-input__label" for="promo">Промокод</label>
                                         <button class="custom-input__btn" type="button" aria-label="Очистить поле">
-                                            <svg class="custom-input__icon-btn" width="24" height="24">
+                                            <svg class="custom-input__icon-btn" width="24" height="24" aria-hidden="true">
                                                 <use xlink:href="img/sprite/sprite.svg#x-cross-icon"></use>
                                             </svg>
                                         </button>
                                     </div>
                                 </div>
-                            </fieldset>
-                            <!-- Доставка -->
-                            <fieldset class="order-form__group">
-                                <legend class="order-form__group-name">Доставка</legend>
+                            </div>
+
+                            <div class="order-form__group">
+                                <h2 class="order-form__group-name">Доставка</h2>
                                 <div class="order-form__inner">
                                     <div class="custom-radio">
                                         <input class="custom-radio__field visually-hidden" id="radio-self" type="radio"
@@ -220,10 +248,11 @@
                                                 <span class="custom-radio__name">Самовывоз</span>
                                                 <span class="custom-radio__price">+ 0 руб.</span>
                                             </span>
-                                            <span class="custom-radio__text">Из нашего офиса: г. Самара пр.
-                                                Ленина 1а</span>
+                                            <span class="custom-radio__text">Из нашего офиса: г. Самара, пр. Ленина,
+                                                1А</span>
                                         </label>
                                     </div>
+
                                     <div class="custom-radio">
                                         <input class="custom-radio__field visually-hidden" id="radio-courier"
                                             type="radio" name="delivery" value="courier">
@@ -235,6 +264,7 @@
                                             <span class="custom-radio__text">Доставка курьером до двери</span>
                                         </label>
                                     </div>
+
                                     <div class="custom-radio">
                                         <input class="custom-radio__field visually-hidden" id="radio-post" type="radio"
                                             name="delivery" value="post">
@@ -243,16 +273,14 @@
                                                 <span class="custom-radio__name">Почтой</span>
                                                 <span class="custom-radio__price">+ 250 руб.</span>
                                             </span>
-                                            <span class="custom-radio__text">До ближайшего отделения
-                                                почты</span>
+                                            <span class="custom-radio__text">До ближайшего отделения почты</span>
                                         </label>
                                     </div>
                                 </div>
-                            </fieldset>
+                            </div>
 
-                            <!-- Способ оплаты -->
-                            <fieldset class="order-form__group">
-                                <legend class="order-form__group-name">Способ оплаты</legend>
+                            <div class="order-form__group">
+                                <h2 class="order-form__group-name">Способ оплаты</h2>
                                 <div class="order-form__inner">
                                     <div class="custom-radio">
                                         <input class="custom-radio__field visually-hidden" id="payment-cash"
@@ -261,10 +289,11 @@
                                             <span class="custom-radio__top">
                                                 <span class="custom-radio__name">Наличными</span>
                                             </span>
-                                            <span class="custom-radio__text">Оплата наличными доступна только
-                                                при самовывозе </span>
+                                            <span class="custom-radio__text">Оплата наличными доступна только при
+                                                самовывозе</span>
                                         </label>
                                     </div>
+
                                     <div class="custom-radio">
                                         <input class="custom-radio__field visually-hidden" id="payment-transfer"
                                             type="radio" name="payment" value="transfer">
@@ -272,10 +301,11 @@
                                             <span class="custom-radio__top">
                                                 <span class="custom-radio__name">Перевод на карту</span>
                                             </span>
-                                            <span class="custom-radio__text">По номеру карты зеленого или
-                                                желтого банка</span>
+                                            <span class="custom-radio__text">По номеру карты зеленого или желтого
+                                                банка</span>
                                         </label>
                                     </div>
+
                                     <div class="custom-radio">
                                         <input class="custom-radio__field visually-hidden" id="payment-later"
                                             type="radio" name="payment" value="later">
@@ -283,10 +313,10 @@
                                             <span class="custom-radio__top">
                                                 <span class="custom-radio__name">Наложенным платежом</span>
                                             </span>
-                                            <span class="custom-radio__text">Доступно только при заказе
-                                                почтой</span>
+                                            <span class="custom-radio__text">Доступно только при заказе почтой</span>
                                         </label>
                                     </div>
+
                                     <div class="custom-radio">
                                         <input class="custom-radio__field visually-hidden" id="payment-card"
                                             type="radio" name="payment" value="card" checked>
@@ -294,67 +324,70 @@
                                             <span class="custom-radio__top">
                                                 <span class="custom-radio__name">Картой на сайте</span>
                                             </span>
-                                            <span class="custom-radio__text">Оплатить через форму на
-                                                сайте</span>
+                                            <span class="custom-radio__text">Оплатить через форму на сайте</span>
                                         </label>
                                     </div>
                                 </div>
-                            </fieldset>
+                            </div>
 
-                            <!-- Обработка данных -->
-                            <div class="custom-checkbox custom-checkbox--error">           
+                            <div class="custom-checkbox custom-checkbox--error">
                                 <input class="custom-checkbox__field visually-hidden" type="checkbox"
-                                    name="client-agree" id="client-agree">
+                                    name="client-agree" id="client-agree" required>
                                 <label class="custom-checkbox__label" for="client-agree">
-                                    <span class="custom-checkbox__heading">Нажимая кнопку, вы&nbsp;соглашаетесь
-                                        на&nbsp;<a class="custom-checkbox__link" href="#"> обработку ваших
-                                        персональных данных</a></span>
+                                    <span class="custom-checkbox__heading">
+                                        Нажимая кнопку, вы&nbsp;соглашаетесь на&nbsp;
+                                        <a class="custom-checkbox__link" href="#">обработку ваших персональных данных</a>
+                                    </span>
                                     <svg class="custom-checkbox__icon" width="18" height="13" aria-hidden="true">
                                         <use xlink:href="img/sprite/sprite.svg#true-checked-icon"></use>
                                     </svg>
                                 </label>
                             </div>
 
-                            <!-- Оформить заказ -->
                             <button class="btn order-form__btn" type="submit">Оформить заказ</button>
                         </form>
                     </div>
-                    <div class="order__right-col">
+
+                    <aside class="order__right-col" aria-label="Состав заказа">
                         <h2 class="order__subtitle">Состав заказа</h2>
+
                         <ul class="order__list">
                             <li class="order__item">
                                 <div class="order-card">
                                     <div class="order-card__inner">
-                                        <img class="order-card__img" src="img/order-item-1.jpg" height="66" width="99"
-                                            alt="Изображение товара">
+                                        <img class="order-card__img" src="img/order-item-1.jpg" width="99" height="66"
+                                            alt="Сциндапсус 18 см / 20 см">
                                         <span class="order-card__sale">%</span>
                                     </div>
                                     <a class="order-card__name" href="#">Сциндапсус (18см / 20см)</a>
-                                    <span class="order-card__price">1 x <span class="order-card__price-old">1200р</span>
+                                    <span class="order-card__price">1 × <span class="order-card__price-old">1200р</span>
                                         1000р</span>
                                 </div>
                             </li>
+
                             <li class="order__item">
                                 <div class="order-card">
                                     <div class="order-card__inner">
-                                        <img class="order-card__img" src="img/order-item-2.jpg" height="66" width="99"
-                                            alt="Изображение товара">
+                                        <img class="order-card__img" src="img/order-item-2.jpg" width="99" height="66"
+                                            alt="Лавр 22 см / 28 см">
                                     </div>
                                     <a class="order-card__name" href="#">Лавр (22см / 28см)</a>
-                                    <span class="order-card__price">1 x 600р</span>
+                                    <span class="order-card__price">1 × 600р</span>
                                 </div>
                             </li>
+
                             <li class="order__item">
                                 <div class="order-card">
                                     <div class="order-card__inner">
-                                        <img class="order-card__img" src="img/order-item-3.jpg" height="66" width="99"
-                                            alt="Изображение товара">
+                                        <img class="order-card__img" src="img/order-item-3.jpg" width="99" height="66"
+                                            alt="Драцена 16 см / 35 см">
                                     </div>
                                     <a class="order-card__name" href="#">Драцена (16см / 35см)</a>
-                                    <span class="order-card__price">1 x 1500р</span>
+                                    <span class="order-card__price">1 × 1500р</span>
                                 </div>
                             </li>
                         </ul>
+
                         <div class="order__summary">
                             <div class="order__summary-inner">
                                 <span class="order__summary-name">Стоимость товаров</span>
@@ -365,20 +398,25 @@
                                 <span class="order__summary-count">0р</span>
                             </div>
                         </div>
+
                         <div class="order__total">
                             <span class="order__total-name">Итого к оплате</span>
                             <span class="order__total-count">3100р</span>
                         </div>
-                    </div>
+                    </aside>
                 </div>
             </div>
         </section>
+
         <div class="cookie cookie--active">
-            <p class="cookie__text">Продолжая использовать этот сайт и нажимая кнопку «Принимаю», вы даете <a
-                    class="cookie__link" href="#">согласие на обработку файлов cookie</a></p>
+            <p class="cookie__text">
+                Продолжая использовать этот сайт и нажимая кнопку «Принимаю», вы даете
+                <a class="cookie__link" href="#">согласие на обработку файлов cookie</a>
+            </p>
             <button class="cookie__btn btn" type="button">Принимаю</button>
         </div>
     </main>
+
     <footer class="footer">
         <div class="container">
             <div class="footer__wrapper">
@@ -388,16 +426,19 @@
                             <use xlink:href="img/sprite/sprite.svg#logo-icon-footer"></use>
                         </svg>
                     </a>
+
                     <ul class="footer__social social">
                         <li class="social__item">
-                            <a class="social__link" href="#" target="_blank" aria-label="Ссылка на Вконтакте">
+                            <a class="social__link" href="#" target="_blank" rel="noopener noreferrer"
+                                aria-label="Ссылка на ВКонтакте">
                                 <svg width="22" height="13" aria-hidden="true">
                                     <use xlink:href="img/sprite/sprite.svg#VK-icon"></use>
                                 </svg>
                             </a>
                         </li>
                         <li class="social__item">
-                            <a class="social__link" href="#" target="_blank" aria-label="Ссылка на Одноклассники">
+                            <a class="social__link" href="#" target="_blank" rel="noopener noreferrer"
+                                aria-label="Ссылка на Одноклассники">
                                 <svg width="15" height="22" aria-hidden="true">
                                     <use xlink:href="img/sprite/sprite.svg#OK-icon"></use>
                                 </svg>
@@ -405,15 +446,16 @@
                         </li>
                     </ul>
                 </div>
+
                 <ul class="footer__nav-list">
                     <li class="footer__nav-item">
-                        <a class="footer__nav-link" href="#">О Растениях</a>
+                        <a class="footer__nav-link" href="#">О растениях</a>
                     </li>
                     <li class="footer__nav-item">
                         <a class="footer__nav-link" href="#">О компании</a>
                     </li>
                     <li class="footer__nav-item">
-                        <a class="footer__nav-link" href="#">Сотрудничеств</a>
+                        <a class="footer__nav-link" href="#">Сотрудничество</a>
                     </li>
                     <li class="footer__nav-item">
                         <a class="footer__nav-link" href="shop.html">Каталог</a>
@@ -425,18 +467,20 @@
                         <a class="footer__nav-link" href="#">Контакты</a>
                     </li>
                 </ul>
+
                 <div class="footer__right">
                     <div class="footer__contact">
                         <span class="footer__contact-text">Телефон:</span>
-                        <a class="footer__contact-link" href="tel:+79279999999">+7 927 999-99-99</a>
+                        <a class="footer__contact-link" href="tel:+79279999999">+7&nbsp;927&nbsp;999-99-99</a>
                     </div>
                     <div class="footer__contact">
-                        <span class="footer_contact-text">Почта:</span>
+                        <span class="footer__contact-text">Почта:</span>
                         <a class="footer__contact-link" href="mailto:hello@gpassenger.ru">hello@gpassenger.ru</a>
                     </div>
                 </div>
             </div>
-            <p class="footer__copyright">&copy;&nbsp;2023 зеленый пассажир, Все права защищены</p>
+
+            <p class="footer__copyright">&copy;&nbsp;2023 Зеленый Пассажир. Все права защищены.</p>
         </div>
     </footer>
 </body>

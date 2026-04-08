@@ -3,25 +3,23 @@
 .hero {
     background-color: $color-tara-80;
     padding: 105px 0;
-    /*min-height: calc(100vh - 188px);/*Контент должен растягиваться на всю высоту экрана, поэтому мы вычитаем из высоты блока высоту хэдера*/
     display: flex;
     align-items: center;
-    margin: 0 0 60px;
+    margin-bottom: 60px;
 
     @include vp-1439 {
-        min-height: unset;
         padding: 55px 0;
     }
 
     @include vp-767 {
         padding: 40px 0 260px;
         position: relative;
-        margin: 0 0 30px;
+        margin-bottom: 30px;
     }
 
     &__wrapper {
         display: grid;
-        grid-template-columns: 1fr 640px;
+        grid-template-columns: 1fr minmax(300px, 640px);
         gap: 55px;
         align-items: center;
 
@@ -32,6 +30,7 @@
 
     &__inner {
         @include vp-767 {
+            position: relative;
             z-index: 1;
         }
     }
@@ -41,42 +40,41 @@
         font-size: 34px;
         line-height: 40px;
         letter-spacing: -0.05em;
-        color: $color-verdunGreen;
-        margin: 0 0 40px;
+        margin-bottom: 40px;
 
         @include vp-1439 {
             font-size: 26px;
             line-height: 32px;
-            margin: 0 0 36px;
+            margin-bottom: 36px;
         }
 
         @include vp-767 {
             font-size: 22px;
             line-height: 26px;
             text-align: center;
-            margin: 0 0 15px;
+            margin-bottom: 15px;
         }
     }
-    &__slogan { 
-        font-weight: 400;
+
+    &__slogan {
         font-size: 30px;
         line-height: 36px;
-        color: $color-verdunGreen;
-        margin: 0 0 50px;
+        margin-bottom: 50px;
 
         @include vp-1439 {
             font-size: 18px;
             line-height: 24px;
-            margin: 0 0 30px;
+            margin-bottom: 30px;
         }
 
         @include vp-767 {
             font-size: 14px;
             line-height: 18px;
-            margin: 0 0 23px;
             text-align: center;
+            margin-bottom: 23px;
         }
     }
+
     &__gallery-list {
         @include listReset;
         display: grid;
@@ -98,23 +96,18 @@
     }
 
     &__gallery-item {
-
         @include vp-767 {
             display: none;
         }
-        
     }
-    
+
     &__gallery-item--xl {
         grid-row: span 2;
-        
+
         @include vp-767 {
             display: block;
             grid-row: unset;
             width: 255px;
-            height: 281px;
         }
     }
 }
-
-

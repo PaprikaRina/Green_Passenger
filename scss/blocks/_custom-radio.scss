@@ -2,68 +2,73 @@
 
 .custom-radio {
   position: relative;
-  width: 500px;
+  width: 100%;
+  max-width: 500px;
 
-  &__field:checked + &__label::after {
+  &__field:checked + .custom-radio__label::after {
     background-color: $color-verdunGreen;
   }
 
   &__label {
-    padding: 10px 25px 10px 56px;
-    border: 2px solid $color-verdunGreen;
+    position: relative;
     display: flex;
     flex-direction: column;
     width: 100%;
+    padding: 10px 25px 10px 56px;
+    border: 2px solid $color-verdunGreen;
     border-radius: 10px;
     cursor: pointer;
 
     &:hover {
       border-color: $color-verdunGreen-40;
     }
+
     &:hover::after {
       background-color: $color-verdunGreen-40;
     }
+
     &::before {
       content: "";
-      height: 26px;
+      position: absolute;
+      top: 50%;
+      left: 15px;
       width: 26px;
+      height: 26px;
       background-color: $color-gainsboro;
       border-radius: 50%;
-      position: absolute;
-      top: 50%;
       transform: translateY(-50%);
-      left: 15px;
     }
+
     &::after {
       content: "";
-      height: 12px;
-      width: 12px;
-      background-color: $color-white;
-      border-radius: 50%;
       position: absolute;
       top: 50%;
-      transform: translateY(-50%);
       left: 22px;
+      width: 12px;
+      height: 12px;
+      background-color: $color-white;
+      border-radius: 50%;
+      transform: translateY(-50%);
     }
   }
 
-  &__field:focus-visible + &__label{
+  &__field:focus-visible + .custom-radio__label {
     border-color: $color-daisyBush;
     outline: none;
   }
 
-  &__field:focus-visible + &__label::after{
+  &__field:focus-visible + .custom-radio__label::after {
     background-color: $color-daisyBush;
   }
 
-  &__label:hover &__top, 
-  &__label:hover &__text {
-    color: $color-black-70;
+  &__field:focus-visible + .custom-radio__label .custom-radio__top,
+  &__field:focus-visible + .custom-radio__label .custom-radio__text {
+    color: $color-black;
   }
 
-  &__label:focus-visible &__top, 
-  &__label:focus-visible &__text {
-    color: $color-black;
+  &__label:hover .custom-radio__top,
+  &__label:hover .custom-radio__text {
+    color: $color-black-70;
   }
 
   &__top {
@@ -71,17 +76,26 @@
     align-items: baseline;
     justify-content: space-between;
     gap: 20px;
-    margin: 0 0 12px 0;
+    margin: 0 0 12px;
+    font-weight: 700;
     font-size: 20px;
     line-height: 26px;
     color: $color-black;
-    font-weight: 700;
+
+    @include vp-767 {
+      font-size: 16px;
+      line-height: 22px;
+    }
   }
 
   &__text {
     font-size: 16px;
     line-height: 22px;
     color: $color-black;
+
+    @include vp-767 {
+      font-size: 14px;
+      line-height: 18px;
+    }
   }
 }
-

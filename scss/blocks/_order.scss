@@ -1,35 +1,84 @@
 @use "../_shared" as *;
 
 .order {
+  padding-bottom: 80px;
+  
   &__wrapper {
     display: grid;
-    grid-template-columns: 630px 590px;
+    grid-template-columns: minmax(0, 1fr) 590px;
     align-items: start;
+
+    @include vp-1439 {
+      grid-template-columns: 1fr;
+    }
   }
 
   &__left-col {
     padding: 50px 30px 60px 0;
     border-right: 2px solid $color-saltpan;
+
+    @include vp-1439 {
+      padding: 40px 0 30px;
+      border-right: none;
+      border-bottom: 2px solid $color-saltpan;
+    }
+
+    @include vp-767 {
+      padding: 30px 0 20px;
+    }
   }
 
   &__right-col {
     position: sticky;
-    padding: 50px 0 20px 30px;
     top: 183px;
+    padding: 50px 0 20px 30px;
+
+    @include vp-1439 {
+      position: static;
+      padding: 30px 0 0;
+    }
+
+    @include vp-767 {
+      padding: 20px 0 0;
+    }
   }
 
   &__title {
+    margin: 0 0 50px;
+    font-weight: 700;
     font-size: 46px;
     line-height: 52px;
-    font-weight: 700;
-    margin: 0 0 50px 0;
+
+    @include vp-1439 {
+      margin: 0 0 35px;
+      font-size: 36px;
+      line-height: 42px;
+    }
+
+    @include vp-767 {
+      margin: 0 0 25px;
+      font-size: 28px;
+      line-height: 34px;
+    }
   }
 
   &__subtitle {
-    text-align: center;
+    margin: 0 0 50px;
     font-size: 34px;
     line-height: 30px;
-    margin: 0 0 50px 0;
+    text-align: center;
+
+    @include vp-1439 {
+      margin: 0 0 30px;
+      font-size: 28px;
+      line-height: 32px;
+    }
+
+    @include vp-767 {
+      margin: 0 0 20px;
+      font-size: 22px;
+      line-height: 26px;
+    }
   }
 
   &__list {
@@ -37,33 +86,39 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
-    margin: 0 0 30px 0;
+    margin: 0 0 30px;
   }
 
   &__summary {
-    padding: 20px 0;
-    border-top: 1px solid $color-pinkSwan;
-    border-bottom: 1px solid $color-pinkSwan;
     display: flex;
     flex-direction: column;
     gap: 10px;
-    margin: 0 0 20px 0;
+    margin: 0 0 20px;
+    padding: 20px 0;
+    border-top: 1px solid $color-pinkSwan;
+    border-bottom: 1px solid $color-pinkSwan;
   }
 
   &__summary-inner {
     display: flex;
     justify-content: space-between;
     gap: 20px;
+    font-weight: 700;
     font-size: 14px;
     line-height: 20px;
-    font-weight: 700;
   }
+
   &__total {
     display: flex;
-    gap: 20px;
     justify-content: space-between;
+    gap: 20px;
+    font-weight: 700;
     font-size: 18px;
     line-height: 20px;
-    font-weight: 700;
+
+    @include vp-767 {
+      font-size: 16px;
+      line-height: 20px;
+    }
   }
 }

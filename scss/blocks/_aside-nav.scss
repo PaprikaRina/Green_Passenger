@@ -9,37 +9,42 @@
         padding: 20px 30px;
     }
 
+    @media (max-width: 1050px) {
+            align-self: center;
+        }
+
+
     &__title {
+        margin: 0 0 25px;
         font-weight: 700;
         font-size: 18px;
         line-height: 24px;
         text-align: center;
         color: $color-verdunGreen;
-        margin: 0 0 25px;
 
         @include vp-1439 {
+            margin-bottom: 20px;
             font-size: 15px;
             line-height: 20px;
-            margin: 0 0 20px;
         }
 
         @include vp-767 {
+            margin-bottom: 15px;
             font-size: 12px;
             line-height: 14px;
-            margin: 0 0 15px;
         }
     }
+
     &__list {
         @include listReset;
         display: flex;
         flex-direction: column;
         gap: 25px;
-        // align-items: flex-start;
 
         @include vp-1439 {
             flex-direction: row;
             justify-content: center;
-            gap: 0 30px;
+            gap: 30px;
         }
 
         @include vp-767 {
@@ -48,18 +53,24 @@
             gap: 10px 24px;
         }
     }
+
     &__link {
         display: flex;
         align-items: center;
         gap: 30px;
-        
-        &:hover &__text{
+        color: $color-verdunGreen;
+
+        &:hover .aside-nav__text {
             color: $color-verdunGreen-70;
         }
 
-        &:focus-visible  {
+        &:focus-visible {
             outline: 1px solid $color-verdunGreen-70;
-            outline-offset: 2px;            
+            outline-offset: 2px;
+        }
+
+        &:focus-visible .aside-nav__text {
+            color: $color-verdunGreen-70;
         }
 
         @include vp-1439 {
@@ -67,17 +78,20 @@
         }
 
         svg {
+            flex-shrink: 0;
+
             @include vp-1439 {
-                height: 45px;
                 width: 30px;
+                height: 45px;
             }
 
             @include vp-767 {
-                height: 40px;
                 width: 26px;
+                height: 40px;
             }
         }
     }
+
     &__text {
         font-weight: 700;
         font-size: 20px;
@@ -95,13 +109,4 @@
             line-height: 14px;
         }
     }
-    
 }
-
-
-
-
-
-
-
-

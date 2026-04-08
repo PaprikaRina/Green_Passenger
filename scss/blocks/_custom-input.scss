@@ -16,10 +16,11 @@
         padding: 16px;
         font-family: inherit;
 
-        &:hover {
+        &:not([disabled]):hover {
             border-color: $color-verdunGreen-70;
         }
-        &:focus-visible {
+
+        &:not([disabled]):focus-visible {
             border-color: $color-verdunGreen;
             outline: none;
         }
@@ -27,20 +28,21 @@
         &::placeholder {
             color: $color-darkGray;
         }
+
         &[disabled] {
             border: 2px solid $color-darkGray-40;
             background-color: $color-white;
         }
 
-        &[disabled]::placeholder{
+        &[disabled]::placeholder {
             color: $color-darkGray-40;
         }
-
-
     }
+
     &__field:hover ~ &__icon {
         color: $color-verdunGreen-70;
     }
+
     &__field:focus-visible ~ &__icon {
         color: $color-verdunGreen;
     }
@@ -48,7 +50,9 @@
     &__field:focus-visible + &__label {
         color: $color-verdunGreen-70;
     }
-    &--user-contacts &__field {
+
+    &--user-contacts &__field,
+    &--icon &__field {
         padding-left: 54px;
     }
 
@@ -60,7 +64,7 @@
         font-weight: 700;
         font-size: 14px;
         line-height: 14px;
-        color:$color-verdunGreen;
+        color: $color-verdunGreen;
         background-color: $color-white;
         padding: 1px 4px;
         user-select: none;
@@ -79,7 +83,7 @@
         color: $color-pinkSwan;
     }
 
-    &__btn{
+    &__btn {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -96,26 +100,26 @@
         transform: translateY(-50%);
         color: $color-verdunGreen;
     }
-    &--error &__field{
+
+    &--error &__field {
         border-color: $color-salmon;
     }
+
     &__text-error {
         display: none;
         font-weight: 400;
         font-size: 10px;
         line-height: 10px;
         color: $color-salmon;
-        margin: 5px 0 0 0;
+        margin: 5px 0 0;
         padding: 0;
     }
+
     &--error &__text-error {
         display: block;
     }
+
     &--error &__icon {
         color: $color-salmon;
-        top: 40%;
-        transform: translateY(-40%);
     }
-
 }
-

@@ -1,68 +1,101 @@
 @use "../_shared" as *;
 
 .user-form {
+    width: 100%;
     max-width: 316px;
-    max-height: 324px;
-    border-radius: 20px;
-    border: 4px solid $color-selago;
     margin: 200px auto;
+    border: 4px solid $color-selago;
+    border-radius: 20px;
+    background-color: $color-white;
+
+    @include vp-767 {
+        margin: 120px auto 60px;
+    }
 
     &__wrapper {
         display: flex;
         flex-direction: column;
         margin: 0;
         padding: 85px 40px;
+
+        @include vp-767 {
+            padding: 50px 20px;
+        }
     }
-    &__input{
-        width: 236px;
+
+    &__custom {
+        position: relative;
+        margin: 0;
+        padding: 0;
+    }
+
+    &__input {
+        width: 100%;
         padding: 13px 44px 13px 16px;
         border: 1px solid $color-solitude;
         font-weight: 500;
         font-size: 12px;
-        line-height: 125%; 
+        line-height: 125%;
+        font-family: inherit;
+        color: $color-black;
 
         &::placeholder {
             color: $color-echoBlue;
         }
+
+        &:focus-visible {
+            outline: none;
+            border-color: $color-daisyBush;
+        }
     }
+
     &__login {
         margin: 0 0 12px;
     }
+
     &__password {
         margin: 0 0 20px;
     }
+
     &__button {
-        width: 236px;
-        border-radius: 1px;
-        border: 1px solid $color-solitude;
-        background-color: $color-mauvelous;
-        padding: 12px;
+        width: 100%;
         margin: 0;
+        padding: 12px;
+        border: 1px solid $color-solitude;
+        border-radius: 1px;
+        background-color: $color-mauvelous;
         font-weight: 500;
         font-size: 12px;
         line-height: 125%;
         color: $color-white;
         cursor: pointer;
+        font-family: inherit;
+
+        &:hover {
+            opacity: 0.9;
+        }
+
+        &:focus-visible {
+            outline: 1px solid $color-daisyBush;
+            outline-offset: 2px;
+        }
     }
+
     &__icon {
         position: absolute;
-        top: 40%;
+        top: 50%;
         right: 15px;
-        transform: translateY(-50%)
+        transform: translateY(-50%);
     }
-    &__custom {
-        position: relative;
-        padding: 0;
-        margin: 0;
-    }
+
     &__icon-password {
         padding: 0;
-        background-color: transparent;
         border: none;
+        background-color: transparent;
         cursor: pointer;
     }
+
     &__user-icon {
         pointer-events: none;
     }
 }
-

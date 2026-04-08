@@ -1,8 +1,8 @@
 @use "../_shared" as *;
 
 .footer {
-    box-shadow: 0px -2px 4px 0px $color-black-40;
     padding: 40px 0 30px;
+    box-shadow: 0 -2px 4px 0 $color-black-40;
 
     @include vp-1439 {
         padding: 30px 0 15px;
@@ -11,13 +11,13 @@
     &__wrapper {
         display: grid;
         grid-template-columns: 202px 1fr 202px;
-        gap: 20px;
         align-items: center;
+        gap: 20px;
         margin-bottom: 40px;
 
         @include vp-1439 {
             grid-template-columns: 202px 1fr;
-            margin: 0 0 30px;
+            margin-bottom: 30px;
         }
 
         @include vp-767 {
@@ -46,10 +46,10 @@
     }
 
     &__social {
-        margin: 0 0 0 20px;
+        margin-left: 20px;
 
         @include vp-767 {
-            margin: 0 0 0 0;
+            margin-left: 0;
         }
     }
 
@@ -57,8 +57,9 @@
         @include listReset;
         display: grid;
         grid-template-columns: auto auto;
-        gap: 20px 50px;
         justify-content: center;
+        justify-items: start;
+        gap: 20px 50px;
 
         @include vp-1439 {
             display: none;
@@ -72,12 +73,13 @@
 
     &__nav-link {
         display: flex;
-        text-decoration: none;
         font-weight: 700;
         font-size: 14px;
         line-height: 14px;
         text-transform: uppercase;
+        white-space: nowrap;
         color: $color-verdunGreen;
+        text-decoration: none;
 
         &:hover {
             color: $color-verdunGreen-70;
@@ -112,14 +114,14 @@
         font-weight: 500;
         font-size: 14px;
         line-height: 20px;
-        color:$color-verdunGreen;
+        color: $color-verdunGreen;
     }
 
     &__contact-link {
         font-weight: 500;
         font-size: 14px;
         line-height: 20px;
-        color:$color-verdunGreen;
+        color: $color-verdunGreen;
         text-decoration: underline;
 
         &:hover {
@@ -132,18 +134,17 @@
     }
 
     &__copyright {
-        display: flex;
+        width: 100%;
         margin: 0;
         font-weight: 700;
         font-size: 11px;
         line-height: 20px;
         text-transform: uppercase;
         text-align: right;
-        color:$color-verdunGreen;
+        color: $color-verdunGreen;
 
         @include vp-767 {
             text-align: center;
         }
     }
 }
-

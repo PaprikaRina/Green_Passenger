@@ -2,7 +2,7 @@
 
 .page-content {
     &__title {
-        width: 1220px;
+        width: 100%;
         font-weight: 700;
         font-size: 50px;
         line-height: 60px;
@@ -11,7 +11,7 @@
         margin: 0 auto 30px;
     }
     &__text {
-        width: 443;
+        width: 100%;
         font-weight: 400;
         font-size: 30px;
         line-height: 36px;
