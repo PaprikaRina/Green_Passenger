@@ -8,16 +8,14 @@
 
     <meta name="description"
         content="Вход в личный кабинет интернет-магазина комнатных растений «Зеленый Пассажир». Авторизация для оформления заказов и просмотра истории покупок.">
-    <meta name="keywords"
-        content="вход в личный кабинет, авторизация, интернет-магазин растений, зеленый пассажир">
+    <meta name="keywords" content="вход в личный кабинет, авторизация, интернет-магазин растений, зеленый пассажир">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://example.com/user-form.html">
 
     <meta property="og:type" content="website">
     <meta property="og:locale" content="ru_RU">
     <meta property="og:title" content="Вход в личный кабинет — Зеленый Пассажир">
-    <meta property="og:description"
-        content="Авторизация в интернет-магазине комнатных растений «Зеленый Пассажир».">
+    <meta property="og:description" content="Авторизация в интернет-магазине комнатных растений «Зеленый Пассажир».">
     <meta property="og:url" content="https://example.com/user-form.html">
     <meta property="og:site_name" content="Зеленый Пассажир">
     <meta property="og:image" content="https://example.com/img/og-image.jpg">
@@ -64,7 +62,8 @@
                             </a>
                         </li>
                         <li class="header__user-item">
-                            <a class="header__user-link" href="#" aria-label="Перейти в избранное">
+                            <a class="header__user-link header__user-link--fav" href="#"
+                                aria-label="Перейти в избранное">
                                 <svg class="header__user-icon" width="24" height="24" aria-hidden="true">
                                     <use xlink:href="img/sprite/sprite.svg#star-icon"></use>
                                 </svg>
@@ -135,21 +134,21 @@
 
                 <form class="user-form" action="#" method="post" aria-label="Форма входа">
                     <div class="user-form__wrapper">
-                        <div class="user-form__custom user-form__login-wrapper">
-                            <input class="user-form__input user-form__login" type="text" name="login" id="login"
-                                placeholder="Введите логин" autocomplete="username" required>
+                        <div class="user-form__custom user-form__custom--login">
                             <label class="visually-hidden" for="login">Логин</label>
-                            <span class="user-form__icon user-form__user-icon">
+                            <input class="user-form__input" type="text" name="login" id="login"
+                                placeholder="Введите логин" autocomplete="username" required>
+                            <span class="user-form__icon user-form__icon--static">
                                 <svg class="user-form__svg" width="24" height="18" aria-hidden="true">
                                     <use xlink:href="img/sprite/sprite.svg#user-icon-form"></use>
                                 </svg>
                             </span>
                         </div>
 
-                        <div class="user-form__custom user-form__password-wrapper">
-                            <input class="user-form__input user-form__password" type="password" name="password"
-                                id="password" placeholder="Введите пароль" autocomplete="current-password" required>
+                        <div class="user-form__custom user-form__custom--password">
                             <label class="visually-hidden" for="password">Пароль</label>
+                            <input class="user-form__input" type="password" name="password" id="password"
+                                placeholder="Введите пароль" autocomplete="current-password" required>
                             <button class="user-form__icon user-form__icon-password" type="button"
                                 aria-label="Показать или скрыть пароль">
                                 <svg class="user-form__svg" width="24" height="24" aria-hidden="true">

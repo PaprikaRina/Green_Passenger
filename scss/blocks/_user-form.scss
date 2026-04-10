@@ -27,10 +27,20 @@
         position: relative;
         margin: 0;
         padding: 0;
+
+        &--login {
+            margin: 0 0 12px;
+        }
+
+        &--password {
+            margin: 0 0 20px;
+        }
     }
 
     &__input {
+        box-sizing: border-box;
         width: 100%;
+        margin: 0;
         padding: 13px 44px 13px 16px;
         border: 1px solid $color-solitude;
         font-weight: 500;
@@ -49,14 +59,6 @@
         }
     }
 
-    &__login {
-        margin: 0 0 12px;
-    }
-
-    &__password {
-        margin: 0 0 20px;
-    }
-
     &__button {
         width: 100%;
         margin: 0;
@@ -67,9 +69,9 @@
         font-weight: 500;
         font-size: 12px;
         line-height: 125%;
+        font-family: inherit;
         color: $color-white;
         cursor: pointer;
-        font-family: inherit;
 
         &:hover {
             opacity: 0.9;
@@ -85,17 +87,31 @@
         position: absolute;
         top: 50%;
         right: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+        line-height: 0;
         transform: translateY(-50%);
+
+        svg {
+            display: block;
+            flex-shrink: 0;
+        }
     }
 
     &__icon-password {
-        padding: 0;
         border: none;
         background-color: transparent;
         cursor: pointer;
     }
 
-    &__user-icon {
+    &__icon--static {
         pointer-events: none;
+    }
+
+    &__svg {
+        display: block;
     }
 }

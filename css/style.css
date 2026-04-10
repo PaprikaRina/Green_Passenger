@@ -1156,8 +1156,16 @@ input[type=search]::-webkit-search-results-decoration {
   margin: 0;
   padding: 0;
 }
+.user-form__custom--login {
+  margin: 0 0 12px;
+}
+.user-form__custom--password {
+  margin: 0 0 20px;
+}
 .user-form__input {
+  box-sizing: border-box;
   width: 100%;
+  margin: 0;
   padding: 13px 44px 13px 16px;
   border: 1px solid #E7E8EB;
   font-weight: 500;
@@ -1176,12 +1184,6 @@ input[type=search]::-webkit-search-results-decoration {
   outline: none;
   border-color: #502198;
 }
-.user-form__login {
-  margin: 0 0 12px;
-}
-.user-form__password {
-  margin: 0 0 20px;
-}
 .user-form__button {
   width: 100%;
   margin: 0;
@@ -1192,9 +1194,9 @@ input[type=search]::-webkit-search-results-decoration {
   font-weight: 500;
   font-size: 12px;
   line-height: 125%;
+  font-family: inherit;
   color: #FFFFFF;
   cursor: pointer;
-  font-family: inherit;
 }
 .user-form__button:hover {
   opacity: 0.9;
@@ -1207,16 +1209,28 @@ input[type=search]::-webkit-search-results-decoration {
   position: absolute;
   top: 50%;
   right: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  line-height: 0;
   transform: translateY(-50%);
 }
+.user-form__icon svg {
+  display: block;
+  flex-shrink: 0;
+}
 .user-form__icon-password {
-  padding: 0;
   border: none;
   background-color: transparent;
   cursor: pointer;
 }
-.user-form__user-icon {
+.user-form__icon--static {
   pointer-events: none;
+}
+.user-form__svg {
+  display: block;
 }
 
 .stocks-card {
