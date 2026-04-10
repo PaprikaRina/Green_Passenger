@@ -2007,6 +2007,7 @@ input[type=search]::-webkit-search-results-decoration {
   display: flex;
   align-items: center;
   gap: 20px;
+  min-width: 0;
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
@@ -2041,6 +2042,7 @@ input[type=search]::-webkit-search-results-decoration {
 }
 .order-card__name {
   min-width: 0;
+  overflow-wrap: break-word;
   color: #475009;
 }
 .order-card__name:hover {
@@ -2051,6 +2053,7 @@ input[type=search]::-webkit-search-results-decoration {
   outline-offset: 2px;
 }
 .order-card__price {
+  flex-shrink: 0;
   margin-left: auto;
   white-space: nowrap;
   color: #475009;
