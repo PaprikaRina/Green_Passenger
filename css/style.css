@@ -296,6 +296,16 @@ input[type=search]::-webkit-search-results-decoration {
   gap: 20px;
   min-width: 0;
 }
+@media (max-width: 767px) {
+  .header__users {
+    gap: 10px;
+  }
+}
+@media (max-width: 410px) {
+  .header__users {
+    gap: 5px;
+  }
+}
 .header__search {
   flex-shrink: 1;
   min-width: 0;
@@ -316,7 +326,12 @@ input[type=search]::-webkit-search-results-decoration {
 }
 @media (max-width: 767px) {
   .header__user-list {
-    display: none;
+    gap: 10px;
+  }
+}
+@media (max-width: 410px) {
+  .header__user-list {
+    gap: 5px;
   }
 }
 .header__user-item {
@@ -335,6 +350,11 @@ input[type=search]::-webkit-search-results-decoration {
 .header__user-link:focus-visible {
   outline: none;
   color: #502198;
+}
+@media (max-width: 767px) {
+  .header__user-link--fav {
+    display: none;
+  }
 }
 .header__user-link:hover .header__user-text {
   color: rgba(71, 80, 9, 0.7);
